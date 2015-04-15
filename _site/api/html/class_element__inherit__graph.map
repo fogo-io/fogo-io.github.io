@@ -1,0 +1,9 @@
+<map id="Element" name="Element">
+<area shape="rect" id="node2" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="47,462,187,602"/>
+<area shape="rect" id="node5" href="$class_label.html" title="Label Element. " alt="" coords="211,462,351,602"/>
+<area shape="rect" id="node6" href="$class_list.html" title="List Class. " alt="" coords="375,395,517,669"/>
+<area shape="rect" id="node7" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="543,429,656,635"/>
+<area shape="rect" id="node8" href="$class_text.html" title="Text Box. " alt="" coords="681,435,820,629"/>
+<area shape="rect" id="node3" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="5,718,104,791"/>
+<area shape="rect" id="node4" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="128,718,231,791"/>
+</map>

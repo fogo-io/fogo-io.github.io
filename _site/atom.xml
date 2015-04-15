@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Fogo IO</title>
+ <link href="http://fogo.io/" rel="self"/>
+ <link href="http://fogo.io"/>
+ <updated>2015-04-15T13:53:51-06:00</updated>
+ <id>http://fogo.io</id>
+ <author>
+   <name>Fogo Digital, Inc</name>
+   <email>info@fogo.io</email>
+ </author>
+
+ 
+ 
+</feed>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_app_controller.html" title="Controller API. " alt="" coords="6,30,109,55"/>
+<area shape="rect" id="node2" href="$class_app.html" title="App State Machine Class. " alt="" coords="173,5,219,30"/>
+<area shape="rect" id="node3" href="$class_app_state.html" title="App State (to be used in a State machine see App) " alt="" coords="158,54,234,79"/>
+</map>

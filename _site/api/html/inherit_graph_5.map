@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_element.html" title="Element Class. " alt="" coords="6,127,76,153"/>
+<area shape="rect" id="node2" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="125,29,230,54"/>
+<area shape="rect" id="node5" href="$class_label.html" title="Label Element. " alt="" coords="150,78,204,103"/>
+<area shape="rect" id="node6" href="$class_list.html" title="List Class. " alt="" coords="156,127,198,153"/>
+<area shape="rect" id="node7" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="154,177,201,202"/>
+<area shape="rect" id="node8" href="$class_text.html" title="Text Box. " alt="" coords="154,226,200,251"/>
+<area shape="rect" id="node3" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="280,5,360,30"/>
+<area shape="rect" id="node4" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="278,54,362,79"/>
+</map>

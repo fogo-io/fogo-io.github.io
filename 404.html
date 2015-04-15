@@ -1,0 +1,19 @@
+---
+layout: post
+title:  Not Found
+tagline: Sorry (404 Error)
+---
+
+The page you are looking for has probably been moved.  Here is a list of the most 
+popular posts:
+<ul>
+{% assign pages_list = site.tags["popular"] %}  
+{% include JB/pages_list %}
+</ul>
+
+If what you are looking for is not in the list above, try these links:
+<ul>
+<li><a href="{{ BASE_URL }}/tips.html">Embedded Design Tips</a></li>
+<li><a href="{{ BASE_URL }}/">CoActionOS Home</a></li>
+</ul>
+

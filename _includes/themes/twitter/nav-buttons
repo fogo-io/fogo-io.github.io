@@ -1,0 +1,9 @@
+<a class="btn btn-primary" href="{{ BASE_PATH }}{{ site.JB.archive_path }}"
+	data-toggle="tooltip" data-placement="top" title="" data-original-title="Archives"
+	><i class="fa fa-archive"></i></a> 
+<a class="btn btn-primary" href="{{ BASE_PATH }}/categories.html"
+	data-toggle="tooltip" data-placement="top" title="" data-original-title="Categories"
+	><i class="fa fa-folder-open"></i></a>
+<a class="btn btn-primary" href="{{ BASE_PATH }}/tags.html"
+	data-toggle="tooltip" data-placement="top" title="" data-original-title="Tags"
+	><i class="fa fa-tags"></i></a>

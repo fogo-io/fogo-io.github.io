@@ -1,0 +1,79 @@
+
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>
+						{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
+					</h1>
+				</div>
+				<div class="panel-body">
+					{{ content }}
+				</div>
+			</div>
+
+			{% unless page.tags == empty %}
+			<ul class="nav nav-pills">
+				{% assign tags_list = page.tags %}
+				{% include JB/tags_list %}
+			</ul>
+			{% endunless %}
+			<div class="pagination">
+				<center>
+					{% if page.previous %} 
+						<a href="{{ BASE_PATH }}{{ page.previous.url }}" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="left" title="" data-original-title="Previous Post"
+							>
+							<i class="fa fa-arrow-left"></i>
+						</a> 
+					{% else %} 
+						<a href="#" type="button" class="disabled btn btn-primary"><i class="fa fa-arrow-left"></i></a>
+					{% endif %} 
+					<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Archives"
+						>
+						<i class="fa fa-archive"></i>
+					</a> 
+					<a href="{{ BASE_PATH }}/categories.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Categories"
+					>
+						<i class="fa fa-folder-open"></i>
+					</a> 
+					{% if page.next %} 
+						<a href="{{ BASE_PATH }}{{ page.next.url }}" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="right" title="" data-original-title="Next Post"
+							>
+							<i class="fa fa-arrow-right"></i>
+						</a>
+					{% else %} <a href="#" type="button" class="disabled btn btn-primary"><i class="fa fa-arrow-right"></i></a> {% endif %}
+				</center>
+			</div>
+				
+		</div>
+		<div class="col-md-3">
+		{% unless page.categories == empty %}
+
+			<h3>{{ page.category }}</h3>
+			<ul class="nav nav-pills nav-stacked">
+				{% assign category = page.category | downcase %}
+				{% assign pages_list = site.categories[category] %}
+				{% include JB/pages_list %}
+			</ul>
+			
+			{% if category == "embedded design tips" %}
+				<h3>Embedded C Tutorial</h3>
+				<ul class="nav nav-pills nav-stacked">
+					{% assign pages_list = site.categories["embedded c tutorial"] %}  
+					{% include JB/pages_list %}
+				</ul>
+			
+			{% endif %}
+			
+			{% endunless %}  
+		</div>
+	</div>
+
+</div>
+

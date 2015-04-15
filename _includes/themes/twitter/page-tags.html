@@ -1,0 +1,46 @@
+<script type="text/javascript">
+
+function register_click(name){
+	$("#" + name).click( function(){
+		$(".tag-list-item").removeClass("active");
+		$("#" + name).addClass("active");
+		$(".tagged").addClass("hidden");
+		$("." + name).removeClass("hidden");
+	});	
+}
+
+$(document).ready( function(){
+	{% for tag in site.tags %}
+	register_click("{{ tag[0] }}");	
+	{% endfor %}
+	
+	$("#all").click(function(){
+		$(".tagged").removeClass("hidden");
+		$(".tag-list-item").removeClass("active");
+	});
+});
+
+</script>
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7 panel panel-default">
+			<div class="panel-body">
+				{{ content }}
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h2><i class="fa fa-filter"></i> Filter
+			<button id="all" class="btn btn-default pull-right"><i class="fa fa-refresh"></i></button>
+			</h2>
+			<ul class="list-inline">
+				{% assign tags_list = site.tags %}
+				{% include JB/tags_list_group %}
+			</ul>
+			<div class="list-inline">
+				{% include themes/twitter/nav-buttons %}
+			</div>
+		</div>
+	</div>
+</div>
+

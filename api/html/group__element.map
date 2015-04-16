@@ -1,0 +1,5 @@
+<map id="UI Elements" name="UI Elements">
+<area shape="rect" id="node1" href="$group__label.html" title="Label" alt="" coords="168,5,222,30"/>
+<area shape="rect" id="node2" href="$group__edit.html" title="Edit Settings" alt="" coords="147,54,243,79"/>
+<area shape="rect" id="node3" href="$group__graph.html" title="Graphs" alt="" coords="162,103,227,129"/>
+</map>

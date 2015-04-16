@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://fogo.io/</loc>
-    <lastmod>2015-04-15T13:53:51-06:00</lastmod>
+    <lastmod>2015-04-15T15:29:42-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -256,6 +256,240 @@
   </url>
   
   <url>
+    <loc>http://fogo.io/api/html/class_edit-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_setting_int-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_setting_int.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_long_press-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_long_press.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_short_press-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_short_press.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_units-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_edit_sys_units.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
     <loc>http://fogo.io/api/html/class_element-members.html</loc>
     
       <lastmod>2015-04-15</lastmod>
@@ -426,6 +660,32 @@
   
   <url>
     <loc>http://fogo.io/api/html/class_label.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_label_metric-members.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/class_label_metric.html</loc>
     
       <lastmod>2015-04-15</lastmod>
     
@@ -1218,7 +1478,46 @@
   </url>
   
   <url>
+    <loc>http://fogo.io/api/html/group__edit.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
     <loc>http://fogo.io/api/html/group__element.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/group__graph.html</loc>
+    
+      <lastmod>2015-04-15</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/group__label.html</loc>
     
       <lastmod>2015-04-15</lastmod>
     

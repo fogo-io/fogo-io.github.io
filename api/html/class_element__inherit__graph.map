@@ -1,9 +1,19 @@
 <map id="Element" name="Element">
-<area shape="rect" id="node2" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="47,462,187,602"/>
-<area shape="rect" id="node5" href="$class_label.html" title="Label Element. " alt="" coords="211,462,351,602"/>
-<area shape="rect" id="node6" href="$class_list.html" title="List Class. " alt="" coords="375,395,517,669"/>
-<area shape="rect" id="node7" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="543,429,656,635"/>
-<area shape="rect" id="node8" href="$class_text.html" title="Text Box. " alt="" coords="681,435,820,629"/>
-<area shape="rect" id="node3" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="5,718,104,791"/>
-<area shape="rect" id="node4" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="128,718,231,791"/>
+<area shape="rect" id="node2" href="$class_edit.html" title="Edit Element. " alt="" coords="486,415,625,649"/>
+<area shape="rect" id="node11" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="918,462,1057,602"/>
+<area shape="rect" id="node14" href="$class_label.html" title="Label Element. " alt="" coords="1082,462,1221,602"/>
+<area shape="rect" id="node16" href="$class_list.html" title="List Class. " alt="" coords="1246,395,1388,669"/>
+<area shape="rect" id="node17" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="1413,429,1527,635"/>
+<area shape="rect" id="node18" href="$class_text.html" title="Text Box. " alt="" coords="1551,435,1691,629"/>
+<area shape="rect" id="node3" href="$class_edit_setting_int.html" title="Edit Integer Class. " alt="" coords="73,718,193,871"/>
+<area shape="rect" id="node4" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="218,725,368,865"/>
+<area shape="rect" id="node8" href="$class_edit_sys_long_press.html" title="Edit System Long Press Setting. " alt="" coords="393,725,543,865"/>
+<area shape="rect" id="node9" href="$class_edit_sys_short_press.html" title="Edit System Short Press Setting. " alt="" coords="568,725,720,865"/>
+<area shape="rect" id="node10" href="$class_edit_sys_units.html" title="Edit System Units Setting. " alt="" coords="744,725,860,865"/>
+<area shape="rect" id="node5" href="$class_edit_sys_brightness_high.html" title="Edit System High Brightness Class. " alt="" coords="5,921,181,1021"/>
+<area shape="rect" id="node6" href="$class_edit_sys_brightness_low.html" title="Edit System Low Brightness Class. " alt="" coords="206,921,380,1021"/>
+<area shape="rect" id="node7" href="$class_edit_sys_brightness_med.html" title="Edit System Med Brightness Class. " alt="" coords="404,921,579,1021"/>
+<area shape="rect" id="node12" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="885,758,984,831"/>
+<area shape="rect" id="node13" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="1008,758,1111,831"/>
+<area shape="rect" id="node15" href="$class_label_metric.html" title="Label with Value Class. " alt="" coords="1137,725,1276,865"/>
 </map>

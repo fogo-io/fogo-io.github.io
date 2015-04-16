@@ -10,9 +10,9 @@
 <title>Graphical Class Hierarchy</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="class_charge.html" target="_top" xlink:title="Charge API. ">
-<polygon fill="none" stroke="black" points="0.601074,-0 0.601074,-18 49.3989,-18 49.3989,-0 0.601074,-0"/>
-<text text-anchor="middle" x="25" y="-6" font-family="Helvetica,sans-Serif" font-size="10.00">Charge</text>
+<g id="a_node1"><a xlink:href="class_display.html" target="_top" xlink:title="Display class. ">
+<polygon fill="none" stroke="black" points="0.605957,-0 0.605957,-18 49.394,-18 49.394,-0 0.605957,-0"/>
+<text text-anchor="middle" x="25" y="-6" font-family="Helvetica,sans-Serif" font-size="10.00">Display</text>
 </a>
 </g>
 </g>

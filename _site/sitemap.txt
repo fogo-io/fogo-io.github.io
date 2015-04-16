@@ -14,6 +14,8 @@ http://fogo.io/api/html/class_app_state-members.html
 http://fogo.io/api/html/class_app_state.html
 http://fogo.io/api/html/class_button-members.html
 http://fogo.io/api/html/class_button.html
+http://fogo.io/api/html/class_button_bar-members.html
+http://fogo.io/api/html/class_button_bar.html
 http://fogo.io/api/html/class_charge-members.html
 http://fogo.io/api/html/class_charge.html
 http://fogo.io/api/html/class_display-members.html
@@ -56,6 +58,16 @@ http://fogo.io/api/html/class_light-members.html
 http://fogo.io/api/html/class_light.html
 http://fogo.io/api/html/class_list-members.html
 http://fogo.io/api/html/class_list.html
+http://fogo.io/api/html/class_list_item-members.html
+http://fogo.io/api/html/class_list_item.html
+http://fogo.io/api/html/class_list_item_callback-members.html
+http://fogo.io/api/html/class_list_item_callback.html
+http://fogo.io/api/html/class_list_item_check-members.html
+http://fogo.io/api/html/class_list_item_check.html
+http://fogo.io/api/html/class_list_item_element-members.html
+http://fogo.io/api/html/class_list_item_element.html
+http://fogo.io/api/html/class_list_item_toggle-members.html
+http://fogo.io/api/html/class_list_item_toggle.html
 http://fogo.io/api/html/class_loc-members.html
 http://fogo.io/api/html/class_loc.html
 http://fogo.io/api/html/class_location-members.html
@@ -75,9 +87,12 @@ http://fogo.io/api/html/class_sys.html
 http://fogo.io/api/html/class_text-members.html
 http://fogo.io/api/html/class_text.html
 http://fogo.io/api/html/classes.html
+http://fogo.io/api/html/dir_000000_000002.html
+http://fogo.io/api/html/dir_000003_000002.html
 http://fogo.io/api/html/dir_6ba165bb2e09366e887108d984d89e5c.html
 http://fogo.io/api/html/dir_bae4909626ecdc7871747f8da3c02062.html
 http://fogo.io/api/html/dir_d44c64559bbebec7f509842c48db8b23.html
+http://fogo.io/api/html/dir_e4341c5bb6835a0197618859a3d9eb6f.html
 http://fogo.io/api/html/files.html
 http://fogo.io/api/html/functions.html
 http://fogo.io/api/html/functions_b.html
@@ -117,6 +132,7 @@ http://fogo.io/api/html/group__element.html
 http://fogo.io/api/html/group__graph.html
 http://fogo.io/api/html/group__label.html
 http://fogo.io/api/html/group__light.html
+http://fogo.io/api/html/group__list.html
 http://fogo.io/api/html/group__loc.html
 http://fogo.io/api/html/group__sys.html
 http://fogo.io/api/html/hierarchy.html
@@ -161,6 +177,8 @@ http://fogo.io/api/html/structmap__interest__point__t-members.html
 http://fogo.io/api/html/structmap__interest__point__t.html
 http://fogo.io/api/html/structmap__t-members.html
 http://fogo.io/api/html/structmap__t.html
+http://fogo.io/api/html/sys_8h.html
+http://fogo.io/api/html/sys_8h_source.html
 http://fogo.io/tutorials.html
 http://fogo.io/api/html/unionpower__ctrl__t-members.html
 http://fogo.io/api/html/unionpower__ctrl__t.html

@@ -1,4 +1,4 @@
 <map id="AppController" name="AppController">
-<area shape="rect" id="node2" href="$class_app.html" title="App State Machine Class. " alt="" coords="5,375,187,555"/>
-<area shape="rect" id="node3" href="$class_app_state.html" title="App State (to be used in a State machine see App) " alt="" coords="210,302,379,629"/>
+<area shape="rect" id="node2" href="$class_app.html" title="App State Machine Class. " alt="" coords="5,289,187,469"/>
+<area shape="rect" id="node3" href="$class_app_state.html" title="App State (to be used in a State machine see App) " alt="" coords="211,275,367,482"/>
 </map>

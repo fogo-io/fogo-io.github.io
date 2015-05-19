@@ -67,6 +67,8 @@ Public Types</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="class_button.html#a0403b4a62c17d272671c873a9e3d2473aa3c4580c99c0e2abc3f5e3cba7f05beb">LEFT</a> = FOGO_HIO_BUTTON_LEFT, 
 <br/>
+&#160;&#160;<a class="el" href="class_button.html#a0403b4a62c17d272671c873a9e3d2473ae3303a8de965a461c0659cc8e5dd791e">CENTER</a> = FOGO_HIO_BUTTON_CENTER, 
+<br/>
 &#160;&#160;<a class="el" href="class_button.html#a0403b4a62c17d272671c873a9e3d2473aee401b16a9eb305cbfa67a940294d9f2">RIGHT</a> = FOGO_HIO_BUTTON_RIGHT
 <br/>
  }</td></tr>
@@ -89,7 +91,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <tr class="separator:aeeee589dc5c9f60c3f30610cabbed480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503229262a3ada8fb6baa0c262d959b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a503229262a3ada8fb6baa0c262d959b9"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a503229262a3ada8fb6baa0c262d959b9">held</a> (enum <a class="el" href="class_button.html#a0403b4a62c17d272671c873a9e3d2473">button</a> which, int interval)</td></tr>
-<tr class="memdesc:a503229262a3ada8fb6baa0c262d959b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if button is held for <em>interval</em>. <br/></td></tr>
+<tr class="memdesc:a503229262a3ada8fb6baa0c262d959b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if button is held for <em>interval</em> (returns true once per button press) <br/></td></tr>
 <tr class="separator:a503229262a3ada8fb6baa0c262d959b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af071480ad9f3e24df6a44816052d8a31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af071480ad9f3e24df6a44816052d8a31"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af071480ad9f3e24df6a44816052d8a31">pressed</a> (enum <a class="el" href="class_button.html#a0403b4a62c17d272671c873a9e3d2473">button</a> which)</td></tr>
@@ -111,6 +113,10 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a624072116069e887945462c3bb49f11c">right_held</a> ()</td></tr>
 <tr class="memdesc:a624072116069e887945462c3bb49f11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duration in ms right button has been held (zero if not being pushed) <br/></td></tr>
 <tr class="separator:a624072116069e887945462c3bb49f11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8950418de005f4f48f0cd48d4f5cfaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8950418de005f4f48f0cd48d4f5cfaa"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ae8950418de005f4f48f0cd48d4f5cfaa">center_held</a> ()</td></tr>
+<tr class="memdesc:ae8950418de005f4f48f0cd48d4f5cfaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duration in ms center button has been held (zero if not being pushed) <br/></td></tr>
+<tr class="separator:ae8950418de005f4f48f0cd48d4f5cfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7922fe42db21b1cdff3e41aebce9d3af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7922fe42db21b1cdff3e41aebce9d3af"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a7922fe42db21b1cdff3e41aebce9d3af">top_held</a> (int interval)</td></tr>
 <tr class="memdesc:a7922fe42db21b1cdff3e41aebce9d3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if top button has been held for <em>interval</em>. <br/></td></tr>
@@ -123,6 +129,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a782e0d6f3c764f55432e65792f784e18">right_held</a> (int interval)</td></tr>
 <tr class="memdesc:a782e0d6f3c764f55432e65792f784e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if right button has been held for <em>interval</em>. <br/></td></tr>
 <tr class="separator:a782e0d6f3c764f55432e65792f784e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730bb994dfe881b77a48fc2ab3c1ef4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a730bb994dfe881b77a48fc2ab3c1ef4f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a730bb994dfe881b77a48fc2ab3c1ef4f">center_held</a> (int interval)</td></tr>
+<tr class="memdesc:a730bb994dfe881b77a48fc2ab3c1ef4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if right button has been held for <em>interval</em>. <br/></td></tr>
+<tr class="separator:a730bb994dfe881b77a48fc2ab3c1ef4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34316ec3a8cb07f77997aea973fdf460"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34316ec3a8cb07f77997aea973fdf460"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a34316ec3a8cb07f77997aea973fdf460">top_pressed</a> ()</td></tr>
 <tr class="memdesc:a34316ec3a8cb07f77997aea973fdf460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns duration of previous top button press. <br/></td></tr>
@@ -135,6 +145,10 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a781df55fc081fec0eb80a3767c51021f">right_pressed</a> ()</td></tr>
 <tr class="memdesc:a781df55fc081fec0eb80a3767c51021f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns duration of previous right button press. <br/></td></tr>
 <tr class="separator:a781df55fc081fec0eb80a3767c51021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deb7c0732eaa801861a8b774ef47d21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0deb7c0732eaa801861a8b774ef47d21"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a0deb7c0732eaa801861a8b774ef47d21">center_pressed</a> ()</td></tr>
+<tr class="memdesc:a0deb7c0732eaa801861a8b774ef47d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns duration of previous right button press. <br/></td></tr>
+<tr class="separator:a0deb7c0732eaa801861a8b774ef47d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78d9ee6a9405426492849eabc3886a26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78d9ee6a9405426492849eabc3886a26"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a78d9ee6a9405426492849eabc3886a26">top_double_pressed</a> ()</td></tr>
 <tr class="memdesc:a78d9ee6a9405426492849eabc3886a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if top button is double pressed. <br/></td></tr>
@@ -147,6 +161,10 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a062e4ed4f0d7b6905f2b3ce6ec2360f1">right_double_pressed</a> ()</td></tr>
 <tr class="memdesc:a062e4ed4f0d7b6905f2b3ce6ec2360f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if right button is double pressed. <br/></td></tr>
 <tr class="separator:a062e4ed4f0d7b6905f2b3ce6ec2360f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9490e90c212824a030a35efe3e0ecd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace9490e90c212824a030a35efe3e0ecd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ace9490e90c212824a030a35efe3e0ecd">center_double_pressed</a> ()</td></tr>
+<tr class="memdesc:ace9490e90c212824a030a35efe3e0ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if right button is double pressed. <br/></td></tr>
+<tr class="separator:ace9490e90c212824a030a35efe3e0ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a0403b4a62c17d272671c873a9e3d2473"></a>
@@ -164,6 +182,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0403b4a62c17d272671c873a9e3d2473aa3c4580c99c0e2abc3f5e3cba7f05beb"></a>LEFT</em>&#160;</td><td class="fielddoc">
 <p>Left button. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a0403b4a62c17d272671c873a9e3d2473ae3303a8de965a461c0659cc8e5dd791e"></a>CENTER</em>&#160;</td><td class="fielddoc">
+<p>Center button. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0403b4a62c17d272671c873a9e3d2473aee401b16a9eb305cbfa67a940294d9f2"></a>RIGHT</em>&#160;</td><td class="fielddoc">
 <p>Right button. </p>

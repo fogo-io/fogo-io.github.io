@@ -1,5 +1,5 @@
 <map id="EditSysBrightnessHigh" name="EditSysBrightnessHigh">
-<area shape="rect" id="node2" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="18,678,168,818"/>
-<area shape="rect" id="node3" href="$class_edit.html" title="Edit Element. " alt="" coords="23,395,163,629"/>
-<area shape="rect" id="node4" href="$class_element.html" title="Element Class. " alt="" coords="23,6,163,346"/>
+<area shape="rect" id="node2" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="18,611,168,751"/>
+<area shape="rect" id="node3" href="$class_edit.html" title="Edit Element. " alt="" coords="23,382,163,562"/>
+<area shape="rect" id="node4" href="$class_element.html" title="Element Class. " alt="" coords="23,6,163,333"/>
 </map>

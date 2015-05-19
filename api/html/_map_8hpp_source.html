@@ -66,70 +66,78 @@ title: Fogo IO Docs
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_selector(<span class="keywordtype">size_t</span> s){ _selector = s; }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">size_t</span> selector(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _selector; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_map.html#a008c9138ca73190c93b5321c4abe65cd">next</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_map.html#a710b834e525b0a1f13b6b14d4be8f288">prev</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <span class="keywordtype">bool</span> action(MBitmap * bitmap);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_max_distance(<span class="keywordtype">float</span> v){ _max_distance = v; }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">float</span> max_distance()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _max_distance; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;     <span class="keywordtype">void</span> calc_max_distance();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     <span class="keyword">inline</span> uint8_t visible_items()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _visible_items; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_visible_items(uint8_t v){ _visible_items = v; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_bitmap(MBitmap * bitmap){ _bitmap = bitmap; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_max_distance(<span class="keywordtype">float</span> v){ _max_distance = v; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">float</span> max_distance()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _max_distance; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_map.html#acb50e5dda40de985fe1e83d9026d5498">event_handler</a>(<span class="keywordtype">int</span> event);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="keywordtype">void</span> calc_max_distance();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <span class="keyword">inline</span> uint8_t visible_items()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _visible_items; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_visible_items(uint8_t v){ _visible_items = v; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_map.html#aa430853bda6be4bad7e867528ca2d0f6">set_view</a>(<span class="keyword">const</span> MBitmap * bitmap, <span class="keyword">const</span> <a class="code" href="structloc__coord__t.html">loc_coord_t</a> &amp; center, <span class="keywordtype">float</span> d = -1.0);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_map.html#a25a9158c1b4664aa1cb19c5bb3c82113">zoom</a>(<span class="keywordtype">float</span> zoom_factor);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_zoom_factor(<span class="keywordtype">float</span> v){</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          _zoom_factor = v;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;     <span class="keywordtype">float</span> zoom_factor()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _zoom_factor; }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_map.html#a7b47035b9ffdaa8aa6334125b01401fc">pan</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;     <span class="keywordtype">bool</span> <a class="code" href="class_map.html#a94657997f2e4e2cdab8da328c3b1359e">set_map</a>(MapFile * file, <span class="keyword">const</span> MBitmap * bitmap);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_map.html#a13086d92ff4c602533ac1b329123f687">draw_on_bitmap</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">float</span> _heading;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     <a class="code" href="structloc__coord__t.html">loc_coord_t</a> _center;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordtype">float</span> d_x, d_y;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="keyword">mutable</span> <span class="keywordtype">size_t</span> _nitems;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;     <span class="keywordtype">size_t</span> _selector;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <span class="keywordtype">bool</span> new_focus;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_map.html#a5240228b0a20f9f00459c287234820f8">set_view</a>(<span class="keyword">const</span> <a class="code" href="structloc__coord__t.html">loc_coord_t</a> &amp; center, <span class="keywordtype">float</span> d = -1.0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_map.html#a25a9158c1b4664aa1cb19c5bb3c82113">zoom</a>(<span class="keywordtype">float</span> zoom_factor);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_zoom_factor(<span class="keywordtype">float</span> v){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          _zoom_factor = v;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;     }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     <span class="keywordtype">float</span> zoom_factor()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _zoom_factor; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_map.html#a7b47035b9ffdaa8aa6334125b01401fc">pan</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;     <span class="keywordtype">bool</span> <a class="code" href="class_map.html#a1c9ea9a15aef7e81115d2535c96a51c9">set_map</a>(MapFile * file, MBitmap * bitmap);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_map.html#a13086d92ff4c602533ac1b329123f687">draw_on_bitmap</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     MBitmap * _bitmap;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="keyword">inline</span> MBitmap * bitmap(){ <span class="keywordflow">return</span> _bitmap; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <a class="code" href="class_element.html">Element</a> * next(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;     <a class="code" href="class_element.html">Element</a> * prev(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <a class="code" href="class_element.html">Element</a> * update(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     <span class="keywordtype">float</span> _zoom_factor;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     <span class="keywordtype">float</span> _max_distance;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     uint8_t _visible_items;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;     <span class="keywordtype">int</span> pan_steps;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <span class="keywordtype">float</span> dx_pan, dy_pan;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;     <a class="code" href="structloc__coord__t.html">loc_coord_t</a> dest;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;     MapFile * map_file;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     <span class="keywordtype">float</span> _heading;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     <a class="code" href="structloc__coord__t.html">loc_coord_t</a> _center;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <span class="keywordtype">float</span> d_x, d_y;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <span class="keyword">mutable</span> <span class="keywordtype">size_t</span> _nitems;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;     <span class="keywordtype">size_t</span> _selector;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;     <span class="keywordtype">bool</span> new_focus;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MAP_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00070">Element.hpp:70</a></div></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;     <span class="keywordtype">float</span> _zoom_factor;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     <span class="keywordtype">float</span> _max_distance;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     uint8_t _visible_items;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     <span class="keywordtype">int</span> pan_steps;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     <span class="keywordtype">float</span> dx_pan, dy_pan;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;     <a class="code" href="structloc__coord__t.html">loc_coord_t</a> dest;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     MapFile * map_file;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MAP_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00069">Element.hpp:69</a></div></div>
+<div class="ttc" id="class_map_html_a1c9ea9a15aef7e81115d2535c96a51c9"><div class="ttname"><a href="class_map.html#a1c9ea9a15aef7e81115d2535c96a51c9">Map::set_map</a></div><div class="ttdeci">bool set_map(MapFile *file, MBitmap *bitmap)</div><div class="ttdoc">Initialize the map specified by file. </div></div>
+<div class="ttc" id="class_map_html_acb50e5dda40de985fe1e83d9026d5498"><div class="ttname"><a href="class_map.html#acb50e5dda40de985fe1e83d9026d5498">Map::event_handler</a></div><div class="ttdeci">virtual Element * event_handler(int event)</div><div class="ttdoc">Element event handler. </div></div>
+<div class="ttc" id="class_map_html_a5240228b0a20f9f00459c287234820f8"><div class="ttname"><a href="class_map.html#a5240228b0a20f9f00459c287234820f8">Map::set_view</a></div><div class="ttdeci">int set_view(const loc_coord_t &amp;center, float d=-1.0)</div><div class="ttdoc">Set the map view. </div></div>
 <div class="ttc" id="structloc__coord__t_html"><div class="ttname"><a href="structloc__coord__t.html">loc_coord_t</a></div><div class="ttdoc">GPS coordinate. </div><div class="ttdef"><b>Definition:</b> <a href="location_8h_source.html#l00018">location.h:18</a></div></div>
-<div class="ttc" id="class_map_html_aa430853bda6be4bad7e867528ca2d0f6"><div class="ttname"><a href="class_map.html#aa430853bda6be4bad7e867528ca2d0f6">Map::set_view</a></div><div class="ttdeci">int set_view(const MBitmap *bitmap, const loc_coord_t &amp;center, float d=-1.0)</div><div class="ttdoc">Set the map view. </div></div>
 <div class="ttc" id="class_map_html_ac074dbfddb49f7a6c42193fd66d96bc5"><div class="ttname"><a href="class_map.html#ac074dbfddb49f7a6c42193fd66d96bc5">Map::distance</a></div><div class="ttdeci">float distance() const </div><div class="ttdoc">Return the max distance from center to any edge. </div></div>
 <div class="ttc" id="class_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">Map Class (for mapping coords to display) </div><div class="ttdef"><b>Definition:</b> <a href="_map_8hpp_source.html#l00027">Map.hpp:27</a></div></div>
-<div class="ttc" id="class_element_html_a145907025960e5d0e4b6c3caa7788ca0"><div class="ttname"><a href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">Element::dim</a></div><div class="ttdeci">const MDim &amp; dim() const </div><div class="ttdoc">Element dimensions as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00122">Element.hpp:122</a></div></div>
-<div class="ttc" id="class_map_html_a710b834e525b0a1f13b6b14d4be8f288"><div class="ttname"><a href="class_map.html#a710b834e525b0a1f13b6b14d4be8f288">Map::prev</a></div><div class="ttdeci">Element * prev(void)</div><div class="ttdoc">Highlight the previous item within an element (usually a right button press) </div></div>
-<div class="ttc" id="class_element_html_aff6c5b5b2f33685abc369b460671bc1a"><div class="ttname"><a href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">Element::h</a></div><div class="ttdeci">uint8_t h() const </div><div class="ttdoc">Element height as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00120">Element.hpp:120</a></div></div>
+<div class="ttc" id="class_element_html_a145907025960e5d0e4b6c3caa7788ca0"><div class="ttname"><a href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">Element::dim</a></div><div class="ttdeci">const MDim &amp; dim() const </div><div class="ttdoc">Element dimensions as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00129">Element.hpp:129</a></div></div>
+<div class="ttc" id="class_element_html_aff6c5b5b2f33685abc369b460671bc1a"><div class="ttname"><a href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">Element::h</a></div><div class="ttdeci">uint8_t h() const </div><div class="ttdoc">Element height as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00127">Element.hpp:127</a></div></div>
 <div class="ttc" id="class_map_html_a25a9158c1b4664aa1cb19c5bb3c82113"><div class="ttname"><a href="class_map.html#a25a9158c1b4664aa1cb19c5bb3c82113">Map::zoom</a></div><div class="ttdeci">int zoom(float zoom_factor)</div><div class="ttdoc">Zoom in (factor &lt; 1.0) or Zoom out (factor &gt; 1.0) </div></div>
 <div class="ttc" id="class_map_html_a7b47035b9ffdaa8aa6334125b01401fc"><div class="ttname"><a href="class_map.html#a7b47035b9ffdaa8aa6334125b01401fc">Map::pan</a></div><div class="ttdeci">void pan(float x, float y)</div><div class="ttdoc">Pan by x (east is positive) and y (north is positive) meters. </div></div>
 <div class="ttc" id="class_map_html_a13086d92ff4c602533ac1b329123f687"><div class="ttname"><a href="class_map.html#a13086d92ff4c602533ac1b329123f687">Map::draw_on_bitmap</a></div><div class="ttdeci">virtual void draw_on_bitmap(MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d, const ElementPadding &amp;padding)</div><div class="ttdoc">Draw the element on a bitmap. </div></div>
-<div class="ttc" id="class_map_html_a008c9138ca73190c93b5321c4abe65cd"><div class="ttname"><a href="class_map.html#a008c9138ca73190c93b5321c4abe65cd">Map::next</a></div><div class="ttdeci">Element * next(void)</div><div class="ttdoc">Highlight the previous item within an element (usually a left button press) </div></div>
-<div class="ttc" id="class_map_html_a94657997f2e4e2cdab8da328c3b1359e"><div class="ttname"><a href="class_map.html#a94657997f2e4e2cdab8da328c3b1359e">Map::set_map</a></div><div class="ttdeci">bool set_map(MapFile *file, const MBitmap *bitmap)</div><div class="ttdoc">Initialize the map specified by path. </div></div>
 <div class="ttc" id="class_map_html_a2b00a05ab91212dda1f5646681fdf140"><div class="ttname"><a href="class_map.html#a2b00a05ab91212dda1f5646681fdf140">Map::point</a></div><div class="ttdeci">MPoint point(const loc_coord_t coord, const MPoint &amp;offset, const MDim &amp;dim) const </div><div class="ttdoc">Convert a coord to a position a point on the display. </div></div>
 </div><!-- fragment --></div><!-- contents -->

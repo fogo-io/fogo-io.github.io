@@ -50,13 +50,13 @@ title: Fogo IO Docs
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     <span class="keyword">static</span> MBitmap &amp; animate(){ <span class="keywordflow">return</span> _animate; }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     <span class="keyword">static</span> <a class="code" href="class_display.html">Display</a> &amp; display(){ <span class="keywordflow">return</span> _display; }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_app_controller.html#a5bc5c346edf0f34f438cde03ce152403">update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_app_controller.html#a4e156afa7fa55f939f96242e7fcd182c">update</a>(<span class="keywordtype">bool</span> update_buttons = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> button_reset();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> button_wait_release();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_app_controller.html#a8699703c37e5658515fe4f736d4b3f01">   72</a></span>&#160;     <span class="keyword">static</span> <span class="keyword">const</span> fogo_hio_t &amp; <a class="code" href="class_app_controller.html#a8699703c37e5658515fe4f736d4b3f01">report</a>(){ <span class="keywordflow">return</span> _report; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27">   72</a></span>&#160;     <span class="keyword">static</span> fogo_sys_t &amp; <a class="code" href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27">report</a>(){ <span class="keywordflow">return</span> _report; }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_app_controller.html#ad51e0019571457c526f726536541c52a">   75</a></span>&#160;     <span class="keyword">static</span> Trace &amp; <a class="code" href="class_app_controller.html#ad51e0019571457c526f726536541c52a">trace</a>(){ <span class="keywordflow">return</span> _trace; }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
@@ -82,7 +82,7 @@ title: Fogo IO Docs
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="class_button_bar.html">ButtonBar</a> &amp; bar(){ <span class="keywordflow">return</span> display().bar(); }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <span class="keywordtype">void</span> take_screen_action(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> take_screen_action(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
@@ -90,7 +90,7 @@ title: Fogo IO Docs
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     <span class="keyword">static</span> <a class="code" href="class_display.html">Display</a> _display;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     <span class="keyword">static</span> MBitmap _animate;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     <span class="keyword">static</span> fogo_hio_t _report;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     <span class="keyword">static</span> fogo_sys_t _report;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     <span class="keyword">static</span> Trace _trace;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;     <span class="keyword">static</span> MBFontFile _file_font;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;     <span class="keyword">static</span> MBFontMemory _memory_font;</div>
@@ -99,18 +99,18 @@ title: Fogo IO Docs
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;     <span class="keyword">static</span> Settings _settings;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;     <span class="keyword">static</span> <a class="code" href="class_button_bar.html">ButtonBar</a> _button_bar;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> _take_screen;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;     <span class="keyword">static</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> _take_screen;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* APPCONTROLLER_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_app_controller_html"><div class="ttname"><a href="class_app_controller.html">AppController</a></div><div class="ttdoc">Controller API. </div><div class="ttdef"><b>Definition:</b> <a href="_app_controller_8hpp_source.html#l00042">AppController.hpp:42</a></div></div>
+<div class="ttc" id="class_app_controller_html_ab2a0a245c07a604ea1fe792d24a9bd27"><div class="ttname"><a href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27">AppController::report</a></div><div class="ttdeci">static fogo_sys_t &amp; report()</div><div class="ttdoc">Access to system sensors and status. </div><div class="ttdef"><b>Definition:</b> <a href="_app_controller_8hpp_source.html#l00072">AppController.hpp:72</a></div></div>
 <div class="ttc" id="class_app_controller_html_ad51e0019571457c526f726536541c52a"><div class="ttname"><a href="class_app_controller.html#ad51e0019571457c526f726536541c52a">AppController::trace</a></div><div class="ttdeci">static Trace &amp; trace()</div><div class="ttdoc">Access to the trace object. </div><div class="ttdef"><b>Definition:</b> <a href="_app_controller_8hpp_source.html#l00075">AppController.hpp:75</a></div></div>
 <div class="ttc" id="sys_8h_html"><div class="ttname"><a href="sys_8h.html">sys.h</a></div></div>
 <div class="ttc" id="class_app_controller_html_acccc23ef44848457c5e3bf3433cfb9ac"><div class="ttname"><a href="class_app_controller.html#acccc23ef44848457c5e3bf3433cfb9ac">AppController::wait</a></div><div class="ttdeci">static int wait(void)</div><div class="ttdoc">Wait for a system event. </div></div>
-<div class="ttc" id="class_app_controller_html_a8699703c37e5658515fe4f736d4b3f01"><div class="ttname"><a href="class_app_controller.html#a8699703c37e5658515fe4f736d4b3f01">AppController::report</a></div><div class="ttdeci">static const fogo_hio_t &amp; report()</div><div class="ttdoc">Access to system sensors and status. </div><div class="ttdef"><b>Definition:</b> <a href="_app_controller_8hpp_source.html#l00072">AppController.hpp:72</a></div></div>
 <div class="ttc" id="class_app_controller_html_a98f4fe3c0e6f8bcfb07fed4b20c676da"><div class="ttname"><a href="class_app_controller.html#a98f4fe3c0e6f8bcfb07fed4b20c676da">AppController::init</a></div><div class="ttdeci">static int init(const char *app_name=0, bool use_display=true)</div><div class="ttdoc">Initialize Controller. </div></div>
+<div class="ttc" id="class_app_controller_html_a4e156afa7fa55f939f96242e7fcd182c"><div class="ttname"><a href="class_app_controller.html#a4e156afa7fa55f939f96242e7fcd182c">AppController::update</a></div><div class="ttdeci">static int update(bool update_buttons=true)</div><div class="ttdoc">Update the values in report() </div></div>
 <div class="ttc" id="class_display_html"><div class="ttname"><a href="class_display.html">Display</a></div><div class="ttdoc">Display class. </div><div class="ttdef"><b>Definition:</b> <a href="_display_8hpp_source.html#l00016">Display.hpp:16</a></div></div>
-<div class="ttc" id="class_app_controller_html_a5bc5c346edf0f34f438cde03ce152403"><div class="ttname"><a href="class_app_controller.html#a5bc5c346edf0f34f438cde03ce152403">AppController::update</a></div><div class="ttdeci">static int update(void)</div><div class="ttdoc">Update the values in report() </div></div>
 <div class="ttc" id="class_button_bar_html"><div class="ttname"><a href="class_button_bar.html">ButtonBar</a></div><div class="ttdoc">Button Bar. </div><div class="ttdef"><b>Definition:</b> <a href="_button_bar_8hpp_source.html#l00022">ButtonBar.hpp:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

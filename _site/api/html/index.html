@@ -93,7 +93,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Fogo API Documentation</div>  </div>
+<div class="title">Fogo SDK Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>This page is a work in progress &ndash; signup at <a href="http://www.fogo.io">fogo.io</a> for updates </h2>
@@ -101,28 +101,80 @@
 <h2>Getting Started </h2>
 <p>First, you need to download and install the following software:</p>
 <ul>
+<li><a href="http://www.eclipse.org">Eclipse CDT</a></li>
 <li>Fogo SDK (includes compiler and libraries &ndash; coming soon)</li>
 <li>Fogo Link (desktop application for quickly installing and debugging programs)</li>
-<li><a href="http://www.eclipse.org">Eclipse CDT</a></li>
+<li>Flashlight <a class="el" href="class_app.html" title="App State Machine Class. ">App</a> Example Project (coming soon)</li>
 </ul>
 <h2>Anatomy of an <a class="el" href="class_app.html" title="App State Machine Class. ">App</a> </h2>
-<p>Fogo Apps are designed based on a state machine (see <a class="el" href="class_app.html" title="App State Machine Class. ">App</a>). If you have never heard of a state-machine, you might want to read about it on <a href="http://en.wikipedia.org/wiki/Finite-state_machine">Wikipedia</a> to get a general idea.</p>
-<p>A state machine bounces around between states based on certain exit conditions and executes certain actions when entering and leaving each state. For Fogo, we use the <a class="el" href="class_app_state.html" title="App State (to be used in a State machine see App) ">AppState</a> class for the state. These methods are used when jumping between states:</p>
+<p>Fogo Apps are designed based on the <a class="el" href="class_element.html" title="Element Class. ">Element</a> class. An <a class="el" href="class_element.html" title="Element Class. ">Element</a> defines how the class will be drawn on the LCD in a scalable fashion as well as how to respond to events. Elements can use other elements to aid drawing on the screen. For example, the TextBox <a class="el" href="class_element.html" title="Element Class. ">Element</a> utilizes both <a class="el" href="class_label.html" title="Label Element. ">Label</a> and <a class="el" href="class_text.html" title="Text Box. ">Text</a> Elements.</p>
+<p>There are two virtual methods that must be implemented for proper use:</p>
 <ul>
-<li><a class="el" href="class_app_state.html#a87bbe6dfe0edf9e0c1f1ba6b0ba0c060" title="Called when entering state. ">AppState::entry_action()</a> is executing when entering a state</li>
-<li><a class="el" href="class_app_state.html#ab6442b39d0a3841759e5998b796c1ee7" title="Called repeated while in the state. ">AppState::action()</a> is executing every 20ms while in a state</li>
-<li><a class="el" href="class_app_state.html#a396df4110cda441c2050191cf229b949" title="Called to check if it is time for a state transition. ">AppState::exit_condition()</a> tests to see if it is time to exit a state</li>
+<li><a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9" title="Element event handler. ">Element::event_handler</a></li>
+<li><a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd" title="Draw the element on a bitmap. ">Element::draw_on_bitmap</a></li>
 </ul>
-<p>The following methods must pure virtual methods and must be implemented by the inheriting class:</p>
-<ul>
-<li>AppState::name() returns a pointer to the state's name</li>
-<li>AppState::draw(MBitmap * bitmap) draws the state on the specified bitmap</li>
-</ul>
-<p>In most cases, you will want to re-implement <a class="el" href="class_app_state.html#a87bbe6dfe0edf9e0c1f1ba6b0ba0c060" title="Called when entering state. ">AppState::entry_action()</a> and <a class="el" href="class_app_state.html#ab6442b39d0a3841759e5998b796c1ee7" title="Called repeated while in the state. ">AppState::action()</a>. The default behavior for these functions is:</p>
-<ul>
-<li><a class="el" href="class_app_state.html#a87bbe6dfe0edf9e0c1f1ba6b0ba0c060" title="Called when entering state. ">AppState::entry_action()</a> animates the transition to the state and waits for all buttons to be released</li>
-<li><a class="el" href="class_app_state.html#ab6442b39d0a3841759e5998b796c1ee7" title="Called repeated while in the state. ">AppState::action()</a> turns the light on/off based on a press of the top button </li>
-</ul>
+<p><a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9" title="Element event handler. ">Element::event_handler</a> handles events. Here is an example implementation: </p>
+<div class="fragment"><div class="line"><a class="code" href="class_element.html">Element</a> * MyElement::event_handler(<span class="keywordtype">int</span> event){</div>
+<div class="line">    <span class="keywordflow">switch</span>(event){</div>
+<div class="line">    <span class="keywordflow">case</span> CENTER_PRESS:</div>
+<div class="line">         <span class="comment">//do something awesome when the center button is pressed</span></div>
+<div class="line">         <span class="keywordflow">break</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9">Element::event_handler</a>(event); <span class="comment">//default handler for the reset of events</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The <a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd" title="Draw the element on a bitmap. ">Element::draw_on_bitmap</a> method draws the <a class="el" href="class_element.html" title="Element Class. ">Element</a> as it is scaled to the bitmap. Here is an example: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyElement::draw_on_bitmap (MBitmap *b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp;d, <span class="keyword">const</span> ElementPadding &amp;padding){</div>
+<div class="line"></div>
+<div class="line">    Icon icon;</div>
+<div class="line">    mg_int_t w;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordtype">char</span> buffer[32];</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="class_label.html">Label</a> label;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">switch</span>(status){</div>
+<div class="line">    <span class="keywordflow">case</span> STATUS_RECORDING:</div>
+<div class="line">         label.<a class="code" href="class_label.html#a6bcc799fbfc1b2de48f9b163534f8828">set_text</a>(<span class="stringliteral">&quot;RECORD&quot;</span>);</div>
+<div class="line">         <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> STATUS_PLAYING:</div>
+<div class="line">         label.<a class="code" href="class_label.html#a6bcc799fbfc1b2de48f9b163534f8828">set_text</a>(<span class="stringliteral">&quot;PLAY&quot;</span>);</div>
+<div class="line">         <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> STATUS_IDLE:</div>
+<div class="line">         label.<a class="code" href="class_label.html#a6bcc799fbfc1b2de48f9b163534f8828">set_text</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line">         <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">default</span>:</div>
+<div class="line">         <span class="comment">//error</span></div>
+<div class="line">         sprintf(buffer, <span class="stringliteral">&quot;Err:%d&quot;</span>, status);</div>
+<div class="line">         label.<a class="code" href="class_label.html#a6bcc799fbfc1b2de48f9b163534f8828">set_text</a>(buffer);</div>
+<div class="line">         <span class="keywordflow">break</span>;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    label.<a class="code" href="class_element.html#ae330bd96a05876f7945a296db25d285d">set_dim</a>(d.w(), d.h()/4);</div>
+<div class="line">    label.<a class="code" href="class_label.html#af86abe90bd55cfa84c209ee5c81ea89a">draw_on_bitmap</a>(b, x, y, label.<a class="code" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">dim</a>(), label.padding());</div>
+<div class="line"></div>
+<div class="line">    w = d.w()*3/4 - padding.w();</div>
+<div class="line">    icon.set_gfx(Icon::GFX_MIC, w, w, 3);</div>
+<div class="line">    b-&gt;set_bitmap(icon, b-&gt;w()/2 - w/2, b-&gt;h()/2 - w/2);</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The <a class="el" href="class_element.html#aec87c0614a143d385ddceb26d0a34055" title="Draw the element on the specified bitmap. ">Element::draw</a> method can be re-implemented in order to use other Elements as part of your new element. Here is an example:</p>
+<div class="fragment"><div class="line">MDim MyElement::draw (MBitmap *b, mg_int_t x, mg_int_t y, <span class="keywordtype">bool</span> center){</div>
+<div class="line">    <span class="comment">//draw rect</span></div>
+<div class="line"></div>
+<div class="line">    _rect.set_dim(dim().w(), 2*dim().h()/100);</div>
+<div class="line">    _title.set_dim(dim().w()*4/5, 15*dim().h()/100);</div>
+<div class="line">    _status.set_dim(dim().w()/10, 15*dim().h()/100);</div>
+<div class="line">    _text.set_dim(90*dim().w()/100, 83*dim().h()/100);</div>
+<div class="line"></div>
+<div class="line">    _title.draw(b, x, y);</div>
+<div class="line">    _status.draw(b, x+80, y);</div>
+<div class="line">    _rect.draw(b, x, y+15);</div>
+<div class="line">    _text.draw(b, x+5, y+17);</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_element.html#aec87c0614a143d385ddceb26d0a34055">Element::draw</a>(b,x,y,center);</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>A group of Elements can combined to create a more sophisticated UI. A Kit is used to execute animations between related elements. Pressing the center button will cause the <a class="el" href="class_element.html" title="Element Class. ">Element</a> to transition to the child (<a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a" title="Return the element&#39;s child (0 if there is no child) ">Element::child</a>) while holding the center button transitions to the parent (<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581" title="Return the parent element. ">Element::parent</a>). Each <a class="el" href="class_element.html" title="Element Class. ">Element</a> can use Element::event_hanlder to customize how events are handled. </p>
 </div></div><!-- contents -->
 
 			</div>

@@ -47,7 +47,6 @@ title: Fogo IO Docs
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
-      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
@@ -90,11 +89,15 @@ title: Fogo IO Docs
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>backlight_time()
+: <a class="el" href="class_sys.html#ad6fdcf80dc7e8cfce6714a115390803a">Sys</a>
+</li>
 <li>bearing()
 : <a class="el" href="class_location.html#af42e85e2c8ec21fece8f66c2b7d5bc12">Location</a>
 </li>
 <li>brightness()
 : <a class="el" href="class_light.html#a273bd468cbc1359c021619a858ad1705">Light</a>
+, <a class="el" href="class_sys.html#ab102bc8d0078bee6d3bc791fb939600a">Sys</a>
 </li>
 <li>brightness_high()
 : <a class="el" href="class_sys.html#aec8088c20346aaa82af326ea0de42160">Sys</a>
@@ -109,6 +112,21 @@ title: Fogo IO Docs
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cancelled()
+: <a class="el" href="class_element.html#ad84d65bd0079f07ca59f6f3a32533bec">Element</a>
+</li>
+<li>center_double_pressed()
+: <a class="el" href="class_button.html#ace9490e90c212824a030a35efe3e0ecd">Button</a>
+</li>
+<li>center_held()
+: <a class="el" href="class_button.html#a730bb994dfe881b77a48fc2ab3c1ef4f">Button</a>
+</li>
+<li>center_pressed()
+: <a class="el" href="class_button.html#a0deb7c0732eaa801861a8b774ef47d21">Button</a>
+</li>
+<li>child()
+: <a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a">Element</a>
+</li>
 <li>convert_dist()
 : <a class="el" href="class_location.html#ab09c453e24a8e4b848f2536cdb6c77ff">Location</a>
 </li>
@@ -127,6 +145,9 @@ title: Fogo IO Docs
 </li>
 <li>dim()
 : <a class="el" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">Element</a>
+</li>
+<li>dim_on_bitmap()
+: <a class="el" href="class_element.html#ab87e94aff5cd6069ea2470a70f5055bd">Element</a>
 </li>
 <li>disable()
 : <a class="el" href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">Light</a>
@@ -174,10 +195,17 @@ title: Fogo IO Docs
 <li>entry_action()
 : <a class="el" href="class_app_state.html#a87bbe6dfe0edf9e0c1f1ba6b0ba0c060">AppState</a>
 </li>
-<li>exit()
-: <a class="el" href="class_edit.html#ae538bae81d0a6d71e6c90c7f7580164e">Edit</a>
-, <a class="el" href="class_element.html#afaa813845f242ecd62d8a8f08347a507">Element</a>
-, <a class="el" href="class_list.html#a9ebc68bd05acc30b449271f842bd8932">List</a>
+<li>event_handler()
+: <a class="el" href="class_button_bar.html#acdb93b2d4a1d5ab7e0e2968bb29860c7">ButtonBar</a>
+, <a class="el" href="class_edit.html#a37bdb8e90300dd977477bcc393ff7d59">Edit</a>
+, <a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9">Element</a>
+, <a class="el" href="class_list.html#a07fa366dab4c2df824742773600f1906">List</a>
+, <a class="el" href="class_list_item_callback.html#a25569f1a22b4e19588c3710c7161b4f2">ListItemCallback</a>
+, <a class="el" href="class_list_item_check.html#a0902509aa3e6861e0272850fafaf75c5">ListItemCheck</a>
+, <a class="el" href="class_list_item_element.html#ad776842d2f4b000ab60893d27f24e3e8">ListItemElement</a>
+, <a class="el" href="class_list_item_toggle.html#a0b703f4d999ecff05aa0b95ed89db785">ListItemToggle</a>
+, <a class="el" href="class_map.html#acb50e5dda40de985fe1e83d9026d5498">Map</a>
+, <a class="el" href="class_text.html#ad03b18775349df44ce8031939a222bc4">Text</a>
 </li>
 <li>exit_condition()
 : <a class="el" href="class_app_state.html#a396df4110cda441c2050191cf229b949">AppState</a>
@@ -264,7 +292,7 @@ title: Fogo IO Docs
 </li>
 <li>long_press()
 : <a class="el" href="class_button.html#a5d45f764a69d0aa686ff22c2972927c6">Button</a>
-, <a class="el" href="class_sys.html#a011a593288b344cce25f896b90c02ffa">Sys</a>
+, <a class="el" href="class_sys.html#a4552c99b542dc4173c547cbfd9c88352">Sys</a>
 </li>
 <li>ltof()
 : <a class="el" href="class_location.html#af91daa32b29ab2942b768c7b0c92c791">Location</a>
@@ -279,16 +307,8 @@ title: Fogo IO Docs
 <li>min()
 : <a class="el" href="class_graph_1_1_data_set.html#ae6351e3c29c16ef0881f3e7085eb9a28">Graph::DataSet</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
-<li>next()
-: <a class="el" href="class_edit.html#aaf12bc48f40e2ae08f903f6e236461f1">Edit</a>
-, <a class="el" href="class_element.html#a639482461f2af9fad1931d3b9a06cc82">Element</a>
-, <a class="el" href="class_list.html#aa9d7951fbd40db9a4e24439f972c398f">List</a>
-, <a class="el" href="class_map.html#a008c9138ca73190c93b5321c4abe65cd">Map</a>
-, <a class="el" href="class_text.html#a1920c9c1a1ddec59ca3a8c01c8d5b34a">Text</a>
+<li>morse_delay()
+: <a class="el" href="class_sys.html#af97863e88530fe10b0aeee1dd0e14a2d">Sys</a>
 </li>
 </ul>
 
@@ -332,25 +352,18 @@ title: Fogo IO Docs
 <li>pressed()
 : <a class="el" href="class_button.html#af071480ad9f3e24df6a44816052d8a31">Button</a>
 </li>
-<li>prev()
-: <a class="el" href="class_edit.html#ae1c183eed01f44f430400ac0f32d5977">Edit</a>
-, <a class="el" href="class_element.html#a8f966b029ec14a642396afdda874d22f">Element</a>
-, <a class="el" href="class_list.html#a6e4e2013148e1990428835398a519348">List</a>
-, <a class="el" href="class_map.html#a710b834e525b0a1f13b6b14d4be8f288">Map</a>
-, <a class="el" href="class_text.html#a0ba9f256fc555672b0fa8d21e9378537">Text</a>
-</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>report()
-: <a class="el" href="class_app_controller.html#a8699703c37e5658515fe4f736d4b3f01">AppController</a>
+: <a class="el" href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27">AppController</a>
 </li>
 <li>right_double_pressed()
 : <a class="el" href="class_button.html#a062e4ed4f0d7b6905f2b3ce6ec2360f1">Button</a>
 </li>
 <li>right_held()
-: <a class="el" href="class_button.html#a624072116069e887945462c3bb49f11c">Button</a>
+: <a class="el" href="class_button.html#a782e0d6f3c764f55432e65792f784e18">Button</a>
 </li>
 <li>right_pressed()
 : <a class="el" href="class_button.html#a781df55fc081fec0eb80a3767c51021f">Button</a>
@@ -380,24 +393,18 @@ title: Fogo IO Docs
 <li>scroll_visible()
 : <a class="el" href="class_element.html#a155aa95e639ae21cf48f129e5f4b923c">Element</a>
 </li>
-<li>select()
-: <a class="el" href="class_edit.html#aa6c5c004fe9b8d422d0eb4aff772699b">Edit</a>
-, <a class="el" href="class_element.html#ad89ec96315c20058065f0f48686dc856">Element</a>
-, <a class="el" href="class_list.html#a5141c4a14f11cadcfd4c51813d7be498">List</a>
-, <a class="el" href="class_list_item.html#a4e1dc10b00d35c102a81711777832d9d">ListItem</a>
-, <a class="el" href="class_list_item_callback.html#a48e8e0191b4604d65eeca4a458390489">ListItemCallback</a>
-, <a class="el" href="class_list_item_check.html#abd9d688a3ebc4e9f85e428ad9fa18302">ListItemCheck</a>
-, <a class="el" href="class_list_item_element.html#a52a6f5f0da3f956e64c9ef90c306358c">ListItemElement</a>
-, <a class="el" href="class_list_item_toggle.html#a5e5f1f87781a540062b9ab3d05c682e3">ListItemToggle</a>
-</li>
 <li>selected()
 : <a class="el" href="class_list.html#a2c4b4962685a2efbcbc04b0098f4823c">List</a>
 </li>
 <li>set()
 : <a class="el" href="class_graph_1_1_data_set.html#a47454a24ff478a1c89801b2ada3ceb50">Graph::DataSet</a>
 </li>
+<li>set_backlight_time()
+: <a class="el" href="class_sys.html#a69178a2b467695ff8454916fda7b8981">Sys</a>
+</li>
 <li>set_brightness()
 : <a class="el" href="class_light.html#a782d7e68f80575724108879e8ec7b169">Light</a>
+, <a class="el" href="class_sys.html#a1aee2d87169ac6068a6bf4067573b329">Sys</a>
 </li>
 <li>set_brightness_high()
 : <a class="el" href="class_sys.html#a274528eca583ce1469f258f3ad22e5b6">Sys</a>
@@ -408,6 +415,9 @@ title: Fogo IO Docs
 <li>set_brightness_med()
 : <a class="el" href="class_sys.html#abc291d1f0d0626e6f81101b1850b8a67">Sys</a>
 </li>
+<li>set_child()
+: <a class="el" href="class_element.html#a01cfd33869b85735c2c9a71b3ecc102b">Element</a>
+</li>
 <li>set_default()
 : <a class="el" href="class_sys.html#a9c7f016fdcca62c34ea9e26df0623c34">Sys</a>
 </li>
@@ -415,10 +425,13 @@ title: Fogo IO Docs
 : <a class="el" href="class_element.html#ae330bd96a05876f7945a296db25d285d">Element</a>
 </li>
 <li>set_long_press()
-: <a class="el" href="class_sys.html#a310a7bb20eb49a0cf5e333ab9d9074e7">Sys</a>
+: <a class="el" href="class_sys.html#a64d74d0390698ef10521125b8cc3bce9">Sys</a>
 </li>
 <li>set_map()
-: <a class="el" href="class_map.html#a94657997f2e4e2cdab8da328c3b1359e">Map</a>
+: <a class="el" href="class_map.html#a1c9ea9a15aef7e81115d2535c96a51c9">Map</a>
+</li>
+<li>set_morse_delay()
+: <a class="el" href="class_sys.html#afd18cde2f146a7b5f3cd17a3d16ef6bf">Sys</a>
 </li>
 <li>set_parent()
 : <a class="el" href="class_element.html#a8fc2701b903bcd6716f0c1ea9cc023c2">Element</a>
@@ -430,7 +443,7 @@ title: Fogo IO Docs
 : <a class="el" href="class_list.html#a537af09d52694a60ca4726322c2e1560">List</a>
 </li>
 <li>set_short_press()
-: <a class="el" href="class_sys.html#a612bfc74b997d70468566e9d5ea25142">Sys</a>
+: <a class="el" href="class_sys.html#aa4f14607465ae074b5dc96104731f029">Sys</a>
 </li>
 <li>set_text()
 : <a class="el" href="class_label.html#a6bcc799fbfc1b2de48f9b163534f8828">Label</a>
@@ -439,14 +452,14 @@ title: Fogo IO Docs
 : <a class="el" href="class_sys.html#a50772bf6587a4ef2654a6d315c1db11b">Sys</a>
 </li>
 <li>set_view()
-: <a class="el" href="class_map.html#aa430853bda6be4bad7e867528ca2d0f6">Map</a>
+: <a class="el" href="class_map.html#a5240228b0a20f9f00459c287234820f8">Map</a>
 </li>
 <li>set_visible_items()
 : <a class="el" href="class_list.html#a56ab2b2411be8a87cb89afbd734af556">List</a>
 </li>
 <li>short_press()
 : <a class="el" href="class_button.html#a9e3f2ec6e9ce042505be4565502d2d3a">Button</a>
-, <a class="el" href="class_sys.html#a946c1dcdfa5acce1ed2b05a71c6743fa">Sys</a>
+, <a class="el" href="class_sys.html#a63a83f87a482d61423df6e289d57b6aa">Sys</a>
 </li>
 <li>size()
 : <a class="el" href="class_graph_1_1_data_set.html#ad6c9c23b10d6ec73823bc8e12f001e81">Graph::DataSet</a>
@@ -457,6 +470,9 @@ title: Fogo IO Docs
 </li>
 <li>stat()
 : <a class="el" href="class_charge.html#a58756563603a6e3877757aad454ecc26">Charge</a>
+</li>
+<li>sys()
+: <a class="el" href="class_sys.html#ae5ea05aa873e18d5314084fd310087b5">Sys</a>
 </li>
 </ul>
 
@@ -472,7 +488,7 @@ title: Fogo IO Docs
 : <a class="el" href="class_button.html#a78d9ee6a9405426492849eabc3886a26">Button</a>
 </li>
 <li>top_held()
-: <a class="el" href="class_button.html#a041d2d19e2b7a17a863253eb03939064">Button</a>
+: <a class="el" href="class_button.html#a7922fe42db21b1cdff3e41aebce9d3af">Button</a>
 </li>
 <li>top_pressed()
 : <a class="el" href="class_button.html#a34316ec3a8cb07f77997aea973fdf460">Button</a>
@@ -488,7 +504,7 @@ title: Fogo IO Docs
 : <a class="el" href="class_sys.html#ad2325b1dd3c16399b169bb9f66c12612">Sys</a>
 </li>
 <li>update()
-: <a class="el" href="class_app_controller.html#a5bc5c346edf0f34f438cde03ce152403">AppController</a>
+: <a class="el" href="class_app_controller.html#a4e156afa7fa55f939f96242e7fcd182c">AppController</a>
 , <a class="el" href="class_location.html#a522b90142cae67dffa74df20d031cb5d">Location</a>
 </li>
 </ul>

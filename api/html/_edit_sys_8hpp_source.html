@@ -77,39 +77,39 @@ title: Fogo IO Docs
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_edit_sys_long_press.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_long_press.html">EditSysLongPress</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     <a class="code" href="class_edit_sys_long_press.html">EditSysLongPress</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">class </span>EditSysPress : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;     EditSysPress(<a class="code" href="class_element.html">Element</a> * parent = 0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;     <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes) = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     <span class="keywordtype">int</span> value;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     <span class="keywordtype">int</span> value;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_edit_sys_short_press.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_short_press.html">EditSysShortPress</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     <a class="code" href="class_edit_sys_short_press.html">EditSysShortPress</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_edit_sys_long_press.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_long_press.html">EditSysLongPress</a> : <span class="keyword">public</span> EditSysPress {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     <a class="code" href="class_edit_sys_long_press.html">EditSysLongPress</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;     <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     <span class="keywordtype">int</span> value;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_edit_sys_short_press.html">   90</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_short_press.html">EditSysShortPress</a> : <span class="keyword">public</span> EditSysPress {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;     <a class="code" href="class_edit_sys_short_press.html">EditSysShortPress</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_edit_sys_units.html">  101</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_units.html">EditSysUnits</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_edit_sys_morse_delay.html">  101</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_morse_delay.html">EditSysMorseDelay</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;     <a class="code" href="class_edit_sys_units.html">EditSysUnits</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;     <a class="code" href="class_edit_sys_morse_delay.html">EditSysMorseDelay</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
@@ -118,21 +118,37 @@ title: Fogo IO Docs
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;     <span class="keyword">enum</span> <a class="code" href="class_sys.html#ab0e4a3e1ec3f755ba6b9918b9b545a90">Sys::sys_units</a> value;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;     <span class="keywordtype">int</span> value;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_EDITSYS_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00070">Element.hpp:70</a></div></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_edit_sys_units.html">  119</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_sys_units.html">EditSysUnits</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a> {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     <a class="code" href="class_edit_sys_units.html">EditSysUnits</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;     <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;     <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;     <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;     <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;     <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;     <span class="keyword">enum</span> <a class="code" href="class_sys.html#ab0e4a3e1ec3f755ba6b9918b9b545a90">Sys::sys_units</a> value;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_EDITSYS_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00069">Element.hpp:69</a></div></div>
 <div class="ttc" id="class_edit_sys_brightness_med_html"><div class="ttname"><a href="class_edit_sys_brightness_med.html">EditSysBrightnessMed</a></div><div class="ttdoc">Edit System Med Brightness Class. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00045">EditSys.hpp:45</a></div></div>
 <div class="ttc" id="class_edit_sys_brightness_low_html"><div class="ttname"><a href="class_edit_sys_brightness_low.html">EditSysBrightnessLow</a></div><div class="ttdoc">Edit System Low Brightness Class. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00055">EditSys.hpp:55</a></div></div>
-<div class="ttc" id="class_edit_sys_short_press_html"><div class="ttname"><a href="class_edit_sys_short_press.html">EditSysShortPress</a></div><div class="ttdoc">Edit System Short Press Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00083">EditSys.hpp:83</a></div></div>
+<div class="ttc" id="class_edit_sys_short_press_html"><div class="ttname"><a href="class_edit_sys_short_press.html">EditSysShortPress</a></div><div class="ttdoc">Edit System Short Press Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00090">EditSys.hpp:90</a></div></div>
 <div class="ttc" id="class_edit_html"><div class="ttname"><a href="class_edit.html">Edit</a></div><div class="ttdoc">Edit Element. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_8hpp_source.html#l00024">Edit.hpp:24</a></div></div>
 <div class="ttc" id="class_edit_sys_brightness_html"><div class="ttname"><a href="class_edit_sys_brightness.html">EditSysBrightness</a></div><div class="ttdoc">Edit System Brightness. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00017">EditSys.hpp:17</a></div></div>
-<div class="ttc" id="class_edit_sys_long_press_html"><div class="ttname"><a href="class_edit_sys_long_press.html">EditSysLongPress</a></div><div class="ttdoc">Edit System Long Press Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00065">EditSys.hpp:65</a></div></div>
+<div class="ttc" id="class_edit_sys_morse_delay_html"><div class="ttname"><a href="class_edit_sys_morse_delay.html">EditSysMorseDelay</a></div><div class="ttdoc">Edit Morse Delay. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00101">EditSys.hpp:101</a></div></div>
+<div class="ttc" id="class_edit_sys_long_press_html"><div class="ttname"><a href="class_edit_sys_long_press.html">EditSysLongPress</a></div><div class="ttdoc">Edit System Long Press Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00078">EditSys.hpp:78</a></div></div>
 <div class="ttc" id="class_edit_sys_brightness_high_html"><div class="ttname"><a href="class_edit_sys_brightness_high.html">EditSysBrightnessHigh</a></div><div class="ttdoc">Edit System High Brightness Class. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00035">EditSys.hpp:35</a></div></div>
-<div class="ttc" id="class_sys_html_ab0e4a3e1ec3f755ba6b9918b9b545a90"><div class="ttname"><a href="class_sys.html#ab0e4a3e1ec3f755ba6b9918b9b545a90">Sys::sys_units</a></div><div class="ttdeci">sys_units</div><div class="ttdoc">System units. </div><div class="ttdef"><b>Definition:</b> <a href="_sys_8hpp_source.html#l00056">Sys.hpp:56</a></div></div>
-<div class="ttc" id="class_edit_sys_units_html"><div class="ttname"><a href="class_edit_sys_units.html">EditSysUnits</a></div><div class="ttdoc">Edit System Units Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00101">EditSys.hpp:101</a></div></div>
-<div class="ttc" id="class_element_html_aa216057d49337df7e6869b0e9c5ff581"><div class="ttname"><a href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">Element::parent</a></div><div class="ttdeci">Element * parent() const </div><div class="ttdoc">Return the parent element. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00089">Element.hpp:89</a></div></div>
+<div class="ttc" id="class_sys_html_ab0e4a3e1ec3f755ba6b9918b9b545a90"><div class="ttname"><a href="class_sys.html#ab0e4a3e1ec3f755ba6b9918b9b545a90">Sys::sys_units</a></div><div class="ttdeci">sys_units</div><div class="ttdoc">System units. </div><div class="ttdef"><b>Definition:</b> <a href="_sys_8hpp_source.html#l00068">Sys.hpp:68</a></div></div>
+<div class="ttc" id="class_edit_sys_units_html"><div class="ttname"><a href="class_edit_sys_units.html">EditSysUnits</a></div><div class="ttdoc">Edit System Units Setting. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_sys_8hpp_source.html#l00119">EditSys.hpp:119</a></div></div>
+<div class="ttc" id="class_element_html_aa216057d49337df7e6869b0e9c5ff581"><div class="ttname"><a href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">Element::parent</a></div><div class="ttdeci">Element * parent() const </div><div class="ttdoc">Return the parent element. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00085">Element.hpp:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -40,63 +40,58 @@ title: Fogo IO Docs
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../Setting.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Element.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../AppController.hpp&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_edit.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit.html">Edit</a> : <span class="keyword">public</span> <a class="code" href="class_element.html">Element</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;     <a class="code" href="class_edit.html">Edit</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_edit.html#ae1c183eed01f44f430400ac0f32d5977">prev</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_edit.html#aaf12bc48f40e2ae08f903f6e236461f1">next</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_edit.html#aa6c5c004fe9b8d422d0eb4aff772699b">select</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_edit.html#ae538bae81d0a6d71e6c90c7f7580164e">exit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">virtual</span> MDim <a class="code" href="class_edit.html#ac31cbcc4f4354932920594286fd9cd00">draw</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keywordtype">bool</span> center = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_edit.html#a32b802d0536b7f2c4571378fd8502dae">draw_on_bitmap</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">virtual</span> <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_edit.html#a37bdb8e90300dd977477bcc393ff7d59">event_handler</a>(<span class="keywordtype">int</span> event);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;     <span class="keyword">virtual</span> MDim <a class="code" href="class_edit.html#ac31cbcc4f4354932920594286fd9cd00">draw</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keywordtype">bool</span> center = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_edit.html#a32b802d0536b7f2c4571378fd8502dae">draw_on_bitmap</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> setup_element(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes) = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes) = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_edit_setting_int.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_setting_int.html">EditSettingInt</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a>, <span class="keyword">public</span> SettingInt {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;     <a class="code" href="class_edit_setting_int.html">EditSettingInt</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;     <a class="code" href="class_edit_setting_int.html">EditSettingInt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * key, <span class="keyword">const</span> attr_t * <span class="keyword">const</span> attrs, <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_edit_setting_int.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_edit_setting_int.html">EditSettingInt</a> : <span class="keyword">public</span> <a class="code" href="class_edit.html">Edit</a>, <span class="keyword">public</span> SettingInt {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <a class="code" href="class_edit_setting_int.html">EditSettingInt</a>(<a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;     <a class="code" href="class_edit_setting_int.html">EditSettingInt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * key, <span class="keyword">const</span> attr_t * <span class="keyword">const</span> attrs, <a class="code" href="class_element.html">Element</a> * <a class="code" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> = 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> increment(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> decrement(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> load(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> save(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> copy(<span class="keywordtype">char</span> * name, <span class="keywordtype">char</span> * value, <span class="keywordtype">char</span> * units, <span class="keywordtype">size_t</span> nbytes);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     attr_t setting_attrs;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     attr_t setting_attrs;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_EDIT_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_edit_html_ae1c183eed01f44f430400ac0f32d5977"><div class="ttname"><a href="class_edit.html#ae1c183eed01f44f430400ac0f32d5977">Edit::prev</a></div><div class="ttdeci">virtual Element * prev(void)</div><div class="ttdoc">Highlight the previous item within an element (usually a right button press) </div></div>
-<div class="ttc" id="class_edit_html_aaf12bc48f40e2ae08f903f6e236461f1"><div class="ttname"><a href="class_edit.html#aaf12bc48f40e2ae08f903f6e236461f1">Edit::next</a></div><div class="ttdeci">virtual Element * next(void)</div><div class="ttdoc">Highlight the previous item within an element (usually a left button press) </div></div>
-<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00070">Element.hpp:70</a></div></div>
-<div class="ttc" id="class_edit_html_ae538bae81d0a6d71e6c90c7f7580164e"><div class="ttname"><a href="class_edit.html#ae538bae81d0a6d71e6c90c7f7580164e">Edit::exit</a></div><div class="ttdeci">virtual Element * exit(void)</div><div class="ttdoc">Exit the element (return the parent – usually a long left button press) </div></div>
-<div class="ttc" id="class_edit_html_aa6c5c004fe9b8d422d0eb4aff772699b"><div class="ttname"><a href="class_edit.html#aa6c5c004fe9b8d422d0eb4aff772699b">Edit::select</a></div><div class="ttdeci">virtual Element * select(void)</div><div class="ttdoc">Select the current item (return the child/target Element – usually a long right press) ...</div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_EDIT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00069">Element.hpp:69</a></div></div>
+<div class="ttc" id="class_edit_html_a37bdb8e90300dd977477bcc393ff7d59"><div class="ttname"><a href="class_edit.html#a37bdb8e90300dd977477bcc393ff7d59">Edit::event_handler</a></div><div class="ttdeci">virtual Element * event_handler(int event)</div><div class="ttdoc">Element event handler. </div></div>
 <div class="ttc" id="class_edit_html"><div class="ttname"><a href="class_edit.html">Edit</a></div><div class="ttdoc">Edit Element. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_8hpp_source.html#l00024">Edit.hpp:24</a></div></div>
 <div class="ttc" id="class_edit_html_a32b802d0536b7f2c4571378fd8502dae"><div class="ttname"><a href="class_edit.html#a32b802d0536b7f2c4571378fd8502dae">Edit::draw_on_bitmap</a></div><div class="ttdeci">virtual void draw_on_bitmap(MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d, const ElementPadding &amp;padding)</div><div class="ttdoc">Draw the element on a bitmap. </div></div>
-<div class="ttc" id="class_edit_setting_int_html"><div class="ttname"><a href="class_edit_setting_int.html">EditSettingInt</a></div><div class="ttdoc">Edit Integer Class. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_8hpp_source.html#l00057">Edit.hpp:57</a></div></div>
+<div class="ttc" id="class_edit_setting_int_html"><div class="ttname"><a href="class_edit_setting_int.html">EditSettingInt</a></div><div class="ttdoc">Edit Integer Class. </div><div class="ttdef"><b>Definition:</b> <a href="_edit_8hpp_source.html#l00055">Edit.hpp:55</a></div></div>
 <div class="ttc" id="class_edit_html_ac31cbcc4f4354932920594286fd9cd00"><div class="ttname"><a href="class_edit.html#ac31cbcc4f4354932920594286fd9cd00">Edit::draw</a></div><div class="ttdeci">virtual MDim draw(MBitmap *b, mg_int_t x, mg_int_t y, bool center=false)</div><div class="ttdoc">Draw the element on the specified bitmap. </div></div>
-<div class="ttc" id="class_element_html_aa216057d49337df7e6869b0e9c5ff581"><div class="ttname"><a href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">Element::parent</a></div><div class="ttdeci">Element * parent() const </div><div class="ttdoc">Return the parent element. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00089">Element.hpp:89</a></div></div>
+<div class="ttc" id="class_element_html_aa216057d49337df7e6869b0e9c5ff581"><div class="ttname"><a href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">Element::parent</a></div><div class="ttdeci">Element * parent() const </div><div class="ttdoc">Return the parent element. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00085">Element.hpp:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -96,7 +96,7 @@
 <div class="title">Fogo SDK Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>This page is a work in progress &ndash; signup at <a href="http://www.fogo.io">fogo.io</a> for updates </h2>
+<div class="textblock"><h2>This page is a work in progress &ndash; signup at <a href="http://www.fogo.io">fogo.io</a> for updates. </h2>
 <p>Welcome to the Fogo SDK documentation. This page will walk you through everything you need to know to get started developing Apps for Fogo.</p>
 <h2>Getting Started </h2>
 <p>First, you need to download and install the following software:</p>
@@ -106,12 +106,13 @@
 <li>Fogo Link (desktop application for quickly installing and debugging programs)</li>
 <li>Flashlight <a class="el" href="class_app.html" title="App State Machine Class. ">App</a> Example Project (coming soon)</li>
 </ul>
+<p>You start by <a href="http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-importproject.htm">importing the Flashlight app into Eclipse</a>. Once imported, you can click on the build icon in Eclipse to build the application. Once built, you can put your Fogo in Debug mode by selecting Settings-&gt;Debug from the Fogo System settings <a class="el" href="class_app.html" title="App State Machine Class. ">App</a>. Finally, you can use Fogo Link to install and re-install your new app.</p>
 <h2>Anatomy of an <a class="el" href="class_app.html" title="App State Machine Class. ">App</a> </h2>
 <p>Fogo Apps are designed based on the <a class="el" href="class_element.html" title="Element Class. ">Element</a> class. An <a class="el" href="class_element.html" title="Element Class. ">Element</a> defines how the class will be drawn on the LCD in a scalable fashion as well as how to respond to events. Elements can use other elements to aid drawing on the screen. For example, the TextBox <a class="el" href="class_element.html" title="Element Class. ">Element</a> utilizes both <a class="el" href="class_label.html" title="Label Element. ">Label</a> and <a class="el" href="class_text.html" title="Text Box. ">Text</a> Elements.</p>
 <p>There are two virtual methods that must be implemented for proper use:</p>
 <ul>
 <li><a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9" title="Element event handler. ">Element::event_handler</a></li>
-<li><a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd" title="Draw the element on a bitmap. ">Element::draw_on_bitmap</a></li>
+<li><a class="el" href="class_element.html#a33dfd844f04ba01fb51b99600433c169" title="Draw the element on a bitmap. ">Element::draw_to_scale</a></li>
 </ul>
 <p><a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9" title="Element event handler. ">Element::event_handler</a> handles events. Here is an example implementation: </p>
 <div class="fragment"><div class="line"><a class="code" href="class_element.html">Element</a> * MyElement::event_handler(<span class="keywordtype">int</span> event){</div>
@@ -122,8 +123,8 @@
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9">Element::event_handler</a>(event); <span class="comment">//default handler for the reset of events</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The <a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd" title="Draw the element on a bitmap. ">Element::draw_on_bitmap</a> method draws the <a class="el" href="class_element.html" title="Element Class. ">Element</a> as it is scaled to the bitmap. Here is an example: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyElement::draw_on_bitmap (MBitmap *b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp;d, <span class="keyword">const</span> ElementPadding &amp;padding){</div>
+</div><!-- fragment --><p>The <a class="el" href="class_element.html#a33dfd844f04ba01fb51b99600433c169" title="Draw the element on a bitmap. ">Element::draw_to_scale</a> method draws the <a class="el" href="class_element.html" title="Element Class. ">Element</a> as it is scaled to the bitmap. Here is an example: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyElement::draw_to_scale (MBitmap *b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp;d, <span class="keyword">const</span> ElementPadding &amp;padding){</div>
 <div class="line"></div>
 <div class="line">    Icon icon;</div>
 <div class="line">    mg_int_t w;</div>
@@ -150,7 +151,7 @@
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    label.<a class="code" href="class_element.html#ae330bd96a05876f7945a296db25d285d">set_dim</a>(d.w(), d.h()/4);</div>
-<div class="line">    label.<a class="code" href="class_label.html#af86abe90bd55cfa84c209ee5c81ea89a">draw_on_bitmap</a>(b, x, y, label.<a class="code" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">dim</a>(), label.padding());</div>
+<div class="line">    label.<a class="code" href="class_label.html#ac6336cf7d0c0d201672d27d365290e4d">draw_to_scale</a>(b, x, y, label.<a class="code" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">dim</a>(), label.padding());</div>
 <div class="line"></div>
 <div class="line">    w = d.w()*3/4 - padding.w();</div>
 <div class="line">    icon.set_gfx(Icon::GFX_MIC, w, w, 3);</div>
@@ -158,7 +159,7 @@
 <div class="line"></div>
 <div class="line"></div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The <a class="el" href="class_element.html#aec87c0614a143d385ddceb26d0a34055" title="Draw the element on the specified bitmap. ">Element::draw</a> method can be re-implemented in order to use other Elements as part of your new element. Here is an example:</p>
+</div><!-- fragment --><p>The <a class="el" href="class_element.html#ad8afd03b9f3e915e1c6f1a492223b830" title="Draw the element on the specified bitmap. ">Element::draw</a> method can be re-implemented in order to use other Elements as part of your new element. Here is an example:</p>
 <div class="fragment"><div class="line">MDim MyElement::draw (MBitmap *b, mg_int_t x, mg_int_t y, <span class="keywordtype">bool</span> center){</div>
 <div class="line">    <span class="comment">//draw rect</span></div>
 <div class="line"></div>
@@ -171,10 +172,10 @@
 <div class="line">    _status.draw(b, x+80, y);</div>
 <div class="line">    _rect.draw(b, x, y+15);</div>
 <div class="line">    _text.draw(b, x+5, y+17);</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_element.html#aec87c0614a143d385ddceb26d0a34055">Element::draw</a>(b,x,y,center);</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_element.html#ad8afd03b9f3e915e1c6f1a492223b830">Element::draw</a>(b,x,y,center);</div>
 <div class="line"></div>
 <div class="line">}</div>
-</div><!-- fragment --><p>A group of Elements can combined to create a more sophisticated UI. A Kit is used to execute animations between related elements. Pressing the center button will cause the <a class="el" href="class_element.html" title="Element Class. ">Element</a> to transition to the child (<a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a" title="Return the element&#39;s child (0 if there is no child) ">Element::child</a>) while holding the center button transitions to the parent (<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581" title="Return the parent element. ">Element::parent</a>). Each <a class="el" href="class_element.html" title="Element Class. ">Element</a> can use Element::event_hanlder to customize how events are handled. </p>
+</div><!-- fragment --><p>A group of Elements can combined to create a more sophisticated UI. A <a class="el" href="class_kit.html" title="Kit Class. ">Kit</a> is used to execute animations between related elements. Pressing the center button will cause the <a class="el" href="class_element.html" title="Element Class. ">Element</a> to transition to the child (<a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a" title="Return the element&#39;s child (0 if there is no child) ">Element::child</a>) while holding the center button transitions to the parent (<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581" title="Return the parent element. ">Element::parent</a>). Each <a class="el" href="class_element.html" title="Element Class. ">Element</a> can use Element::event_hanlder to customize how events are handled. </p>
 </div></div><!-- contents -->
 
 			</div>

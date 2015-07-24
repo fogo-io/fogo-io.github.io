@@ -32,7 +32,7 @@ title: Fogo IO Docs
 <a href="class_map-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Map Class Reference<div class="ingroups"><a class="el" href="group__element.html">UI Elements</a></div></div>  </div>
+<div class="title">Map Class Reference<div class="ingroups"><a class="el" href="group__nav.html">Navigation</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -43,12 +43,12 @@ title: Fogo IO Docs
 <div class="dynheader">
 Inheritance diagram for Map:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_map__inherit__graph.svg" width="158" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_map__inherit__graph.svg" width="336" height="811"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_map.html" title="Map Class (for mapping coords to display) ">Map</a> Class is used to map GPS coordinates to the screen. </p>
 
-<p>Definition at line <a class="el" href="_map_8hpp_source.html#l00027">27</a> of file <a class="el" href="_map_8hpp_source.html">Map.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_map_8hpp_source.html#l00031">31</a> of file <a class="el" href="_map_8hpp_source.html">Map.hpp</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -78,9 +78,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map.html#a1c9ea9a15aef7e81115d2535c96a51c9">set_map</a> (MapFile *file, MBitmap *bitmap)</td></tr>
 <tr class="memdesc:a1c9ea9a15aef7e81115d2535c96a51c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the map specified by <em>file</em>. <br/></td></tr>
 <tr class="separator:a1c9ea9a15aef7e81115d2535c96a51c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13086d92ff4c602533ac1b329123f687"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map.html#a13086d92ff4c602533ac1b329123f687">draw_on_bitmap</a> (MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d, const ElementPadding &amp;padding)</td></tr>
-<tr class="memdesc:a13086d92ff4c602533ac1b329123f687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on a bitmap.  <a href="#a13086d92ff4c602533ac1b329123f687">More...</a><br/></td></tr>
-<tr class="separator:a13086d92ff4c602533ac1b329123f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072d5ca62032a6b7dc723b1841b20cb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_map.html#a072d5ca62032a6b7dc723b1841b20cb2">draw_to_scale</a> (MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d)</td></tr>
+<tr class="memdesc:a072d5ca62032a6b7dc723b1841b20cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on a bitmap.  <a href="#a072d5ca62032a6b7dc723b1841b20cb2">More...</a><br/></td></tr>
+<tr class="separator:a072d5ca62032a6b7dc723b1841b20cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_screen"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_screen')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_screen.html">Screen</a></td></tr>
+<tr class="memitem:ac6d8b031b1ed1b2bc54aa183ddc86bb3 inherit pub_methods_class_screen"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6d8b031b1ed1b2bc54aa183ddc86bb3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen.html#ac6d8b031b1ed1b2bc54aa183ddc86bb3">Screen</a> (<a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>=0)</td></tr>
+<tr class="memdesc:ac6d8b031b1ed1b2bc54aa183ddc86bb3 inherit pub_methods_class_screen"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="class_screen.html" title="Screen Class. ">Screen</a> with the specified parent. <br/></td></tr>
+<tr class="separator:ac6d8b031b1ed1b2bc54aa183ddc86bb3 inherit pub_methods_class_screen"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e979e11084adc2ea2607c320676b51 inherit pub_methods_class_screen"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1e979e11084adc2ea2607c320676b51"></a>
+virtual <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen.html#ab1e979e11084adc2ea2607c320676b51">menu</a> () const </td></tr>
+<tr class="memdesc:ab1e979e11084adc2ea2607c320676b51 inherit pub_methods_class_screen"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the screen's menu (0 if there is no menu) <br/></td></tr>
+<tr class="separator:ab1e979e11084adc2ea2607c320676b51 inherit pub_methods_class_screen"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96990447fb6dbe4e53b5e726a5e6d4f7 inherit pub_methods_class_screen"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96990447fb6dbe4e53b5e726a5e6d4f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen.html#a96990447fb6dbe4e53b5e726a5e6d4f7">set_menu</a> (<a class="el" href="class_element.html">Element</a> *c)</td></tr>
+<tr class="memdesc:a96990447fb6dbe4e53b5e726a5e6d4f7 inherit pub_methods_class_screen"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the screen's menu. <br/></td></tr>
+<tr class="separator:a96990447fb6dbe4e53b5e726a5e6d4f7 inherit pub_methods_class_screen"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95febaa549fce39e251db70e5ca5623 inherit pub_methods_class_screen"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen.html#ac95febaa549fce39e251db70e5ca5623">event_handler</a> (int event)</td></tr>
+<tr class="memdesc:ac95febaa549fce39e251db70e5ca5623 inherit pub_methods_class_screen"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_element.html" title="Element Class. ">Element</a> event handler.  <a href="#ac95febaa549fce39e251db70e5ca5623">More...</a><br/></td></tr>
+<tr class="separator:ac95febaa549fce39e251db70e5ca5623 inherit pub_methods_class_screen"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_element.html">Element</a></td></tr>
 <tr class="memitem:aabc58eb18190cac9aa408dec72e2660f inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabc58eb18190cac9aa408dec72e2660f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aabc58eb18190cac9aa408dec72e2660f">Element</a> (<a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>=0)</td></tr>
@@ -88,11 +104,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aabc58eb18190cac9aa408dec72e2660f inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc2db1fc51468d2a36b1eb3fc127af2 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc2db1fc51468d2a36b1eb3fc127af2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a4dc2db1fc51468d2a36b1eb3fc127af2">Element</a> (<a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a">child</a>, <a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>)</td></tr>
-<tr class="memdesc:a4dc2db1fc51468d2a36b1eb3fc127af2 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contstruct an element with a child and parent value. <br/></td></tr>
+<tr class="memdesc:a4dc2db1fc51468d2a36b1eb3fc127af2 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an element with a child and parent value. <br/></td></tr>
 <tr class="separator:a4dc2db1fc51468d2a36b1eb3fc127af2 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3075292b66ce3174e3d1d43db9dd602 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3075292b66ce3174e3d1d43db9dd602"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa3075292b66ce3174e3d1d43db9dd602">Element</a> (element_size_t <a class="el" href="class_element.html#a94144b13b5ba5907a27c27542e627990">w</a>, element_size_t <a class="el" href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">h</a>, <a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>=0)</td></tr>
-<tr class="memdesc:aa3075292b66ce3174e3d1d43db9dd602 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contsturct an element with the specified size and parent. <br/></td></tr>
+<tr class="memdesc:aa3075292b66ce3174e3d1d43db9dd602 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an element with the specified size and parent. <br/></td></tr>
 <tr class="separator:aa3075292b66ce3174e3d1d43db9dd602 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa216057d49337df7e6869b0e9c5ff581 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa216057d49337df7e6869b0e9c5ff581"></a>
 <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> () const </td></tr>
@@ -110,21 +126,13 @@ virtual <a class="el" href="class_element.html">Element</a> *&#160;</td><td clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a01cfd33869b85735c2c9a71b3ecc102b">set_child</a> (<a class="el" href="class_element.html">Element</a> *c)</td></tr>
 <tr class="memdesc:a01cfd33869b85735c2c9a71b3ecc102b inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element's child. <br/></td></tr>
 <tr class="separator:a01cfd33869b85735c2c9a71b3ecc102b inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec87c0614a143d385ddceb26d0a34055 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">virtual MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aec87c0614a143d385ddceb26d0a34055">draw</a> (MBitmap *b, mg_int_t x, mg_int_t y, bool center=false)</td></tr>
-<tr class="memdesc:aec87c0614a143d385ddceb26d0a34055 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap.  <a href="#aec87c0614a143d385ddceb26d0a34055">More...</a><br/></td></tr>
-<tr class="separator:aec87c0614a143d385ddceb26d0a34055 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1531924c103c524afb5f3601611235f inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1531924c103c524afb5f3601611235f"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa1531924c103c524afb5f3601611235f">draw</a> (MBitmap &amp;b, mg_int_t x, mg_int_t y, bool center=false)</td></tr>
-<tr class="memdesc:aa1531924c103c524afb5f3601611235f inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:aa1531924c103c524afb5f3601611235f inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b44ebcea5249240042bf1b43e4d22f inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0b44ebcea5249240042bf1b43e4d22f"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ab0b44ebcea5249240042bf1b43e4d22f">draw</a> (MBitmap &amp;b, const MPoint &amp;p, bool center=false)</td></tr>
-<tr class="memdesc:ab0b44ebcea5249240042bf1b43e4d22f inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:ab0b44ebcea5249240042bf1b43e4d22f inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d2a42ba9bae490678671a09e8d81b5 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76d2a42ba9bae490678671a09e8d81b5"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a76d2a42ba9bae490678671a09e8d81b5">draw</a> (MBitmap *b, const MPoint &amp;p, bool center=false)</td></tr>
-<tr class="memdesc:a76d2a42ba9bae490678671a09e8d81b5 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:a76d2a42ba9bae490678671a09e8d81b5 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8afd03b9f3e915e1c6f1a492223b830 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">virtual MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ad8afd03b9f3e915e1c6f1a492223b830">draw</a> (MBitmap *b, mg_int_t x, mg_int_t y)</td></tr>
+<tr class="memdesc:ad8afd03b9f3e915e1c6f1a492223b830 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap.  <a href="#ad8afd03b9f3e915e1c6f1a492223b830">More...</a><br/></td></tr>
+<tr class="separator:ad8afd03b9f3e915e1c6f1a492223b830 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a551a9fd08eb367c2e126b4727c79d1 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a551a9fd08eb367c2e126b4727c79d1"></a>
+MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a4a551a9fd08eb367c2e126b4727c79d1">draw</a> (MBitmap &amp;b, mg_int_t x, mg_int_t y)</td></tr>
+<tr class="memdesc:a4a551a9fd08eb367c2e126b4727c79d1 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
+<tr class="separator:a4a551a9fd08eb367c2e126b4727c79d1 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae330bd96a05876f7945a296db25d285d inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae330bd96a05876f7945a296db25d285d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ae330bd96a05876f7945a296db25d285d">set_dim</a> (const MDim &amp;<a class="el" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">dim</a>)</td></tr>
 <tr class="memdesc:ae330bd96a05876f7945a296db25d285d inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dimensions as a percentage of the target bitmap size. <br/></td></tr>
@@ -209,9 +217,24 @@ static MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a9524e4ddde999a6361ab1f8b3120ffb1">set_scale</a> (element_size_t s)</td></tr>
 <tr class="memdesc:a9524e4ddde999a6361ab1f8b3120ffb1 inherit pub_static_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale value (see <a class="el" href="class_element.html#a658466d7c55f47da4e3afcefc61c1ef9" title="Scale value. ">Element::scale()</a> for details) <br/></td></tr>
 <tr class="separator:a9524e4ddde999a6361ab1f8b3120ffb1 inherit pub_static_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_app_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_app_controller')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_app_controller.html">AppController</a></td></tr>
+<tr class="memitem:a98f4fe3c0e6f8bcfb07fed4b20c676da inherit pub_static_methods_class_app_controller"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a98f4fe3c0e6f8bcfb07fed4b20c676da">init</a> (const char *app_name=0, bool use_display=true)</td></tr>
+<tr class="memdesc:a98f4fe3c0e6f8bcfb07fed4b20c676da inherit pub_static_methods_class_app_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Controller.  <a href="#a98f4fe3c0e6f8bcfb07fed4b20c676da">More...</a><br/></td></tr>
+<tr class="separator:a98f4fe3c0e6f8bcfb07fed4b20c676da inherit pub_static_methods_class_app_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccc23ef44848457c5e3bf3433cfb9ac inherit pub_static_methods_class_app_controller"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#acccc23ef44848457c5e3bf3433cfb9ac">wait</a> (void)</td></tr>
+<tr class="memdesc:acccc23ef44848457c5e3bf3433cfb9ac inherit pub_static_methods_class_app_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a system event.  <a href="#acccc23ef44848457c5e3bf3433cfb9ac">More...</a><br/></td></tr>
+<tr class="separator:acccc23ef44848457c5e3bf3433cfb9ac inherit pub_static_methods_class_app_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e156afa7fa55f939f96242e7fcd182c inherit pub_static_methods_class_app_controller"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e156afa7fa55f939f96242e7fcd182c"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a4e156afa7fa55f939f96242e7fcd182c">update</a> (bool update_buttons=true)</td></tr>
+<tr class="memdesc:a4e156afa7fa55f939f96242e7fcd182c inherit pub_static_methods_class_app_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the values in <a class="el" href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27" title="Access to system sensors and status. ">report()</a> <br/></td></tr>
+<tr class="separator:a4e156afa7fa55f939f96242e7fcd182c inherit pub_static_methods_class_app_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a0a245c07a604ea1fe792d24a9bd27 inherit pub_static_methods_class_app_controller"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2a0a245c07a604ea1fe792d24a9bd27"></a>
+static fogo_sys_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#ab2a0a245c07a604ea1fe792d24a9bd27">report</a> ()</td></tr>
+<tr class="memdesc:ab2a0a245c07a604ea1fe792d24a9bd27 inherit pub_static_methods_class_app_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to system sensors and status. <br/></td></tr>
+<tr class="separator:ab2a0a245c07a604ea1fe792d24a9bd27 inherit pub_static_methods_class_app_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a13086d92ff4c602533ac1b329123f687"></a>
+<a class="anchor" id="a072d5ca62032a6b7dc723b1841b20cb2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -219,7 +242,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Map::draw_on_bitmap </td>
+          <td class="memname">virtual void Map::draw_to_scale </td>
           <td>(</td>
           <td class="paramtype">MBitmap *&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -240,13 +263,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const MDim &amp;&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ElementPadding &amp;&#160;</td>
-          <td class="paramname"><em>padding</em>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -271,7 +288,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd">Element</a>.</p>
+<p>Reimplemented from <a class="el" href="class_element.html#a33dfd844f04ba01fb51b99600433c169">Element</a>.</p>
 
 </div>
 </div>

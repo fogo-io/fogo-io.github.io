@@ -40,14 +40,17 @@ title: Fogo IO Docs
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Progress.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>ProgressBar : <span class="keyword">public</span> Progress {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;     ProgressBar();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;     ProgressBar(uint16_t value, uint16_t max);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;     <span class="keywordtype">void</span> draw_on_bitmap(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_progress_bar.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_progress_bar.html">ProgressBar</a> : <span class="keyword">public</span> <a class="code" href="class_progress.html">Progress</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;     <a class="code" href="class_progress_bar.html">ProgressBar</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;     <a class="code" href="class_progress_bar.html">ProgressBar</a>(uint16_t value, uint16_t max);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_PROGRESSBAR_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_progress_bar.html#ac65886101db914bed514813a7b3d6847">draw_to_scale</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_PROGRESSBAR_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_progress_bar_html"><div class="ttname"><a href="class_progress_bar.html">ProgressBar</a></div><div class="ttdoc">Progress Bar Class. </div><div class="ttdef"><b>Definition:</b> <a href="_progress_bar_8hpp_source.html#l00017">ProgressBar.hpp:17</a></div></div>
+<div class="ttc" id="class_progress_html"><div class="ttname"><a href="class_progress.html">Progress</a></div><div class="ttdoc">Progress Class. </div><div class="ttdef"><b>Definition:</b> <a href="_progress_8hpp_source.html#l00017">Progress.hpp:17</a></div></div>
+<div class="ttc" id="class_progress_bar_html_ac65886101db914bed514813a7b3d6847"><div class="ttname"><a href="class_progress_bar.html#ac65886101db914bed514813a7b3d6847">ProgressBar::draw_to_scale</a></div><div class="ttdeci">void draw_to_scale(MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d)</div><div class="ttdoc">Draw the element on a bitmap. </div></div>
 </div><!-- fragment --></div><!-- contents -->

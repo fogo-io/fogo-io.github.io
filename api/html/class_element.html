@@ -34,7 +34,7 @@ title: Fogo IO Docs
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Element Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__element.html">UI Elements</a></div></div>  </div>
+<div class="title">Element Class Reference<div class="ingroups"><a class="el" href="group__element.html">UI Elements</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -45,12 +45,12 @@ title: Fogo IO Docs
 <div class="dynheader">
 Inheritance diagram for Element:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_element__inherit__graph.svg" width="1786" height="1014"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_element__inherit__graph.svg" width="2655" height="1120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_element.html" title="Element Class. ">Element</a> is a basic building block of the UI. Elements are designed to be scalable so they can be adjusted to different screen sizes so that Apps based on elements are future proof. </p>
 
-<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00069">69</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00027">27</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -87,11 +87,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aabc58eb18190cac9aa408dec72e2660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc2db1fc51468d2a36b1eb3fc127af2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc2db1fc51468d2a36b1eb3fc127af2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a4dc2db1fc51468d2a36b1eb3fc127af2">Element</a> (<a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#ad32988557f2338b5b5c611cf80ab285a">child</a>, <a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>)</td></tr>
-<tr class="memdesc:a4dc2db1fc51468d2a36b1eb3fc127af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contstruct an element with a child and parent value. <br/></td></tr>
+<tr class="memdesc:a4dc2db1fc51468d2a36b1eb3fc127af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an element with a child and parent value. <br/></td></tr>
 <tr class="separator:a4dc2db1fc51468d2a36b1eb3fc127af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3075292b66ce3174e3d1d43db9dd602"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3075292b66ce3174e3d1d43db9dd602"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa3075292b66ce3174e3d1d43db9dd602">Element</a> (element_size_t <a class="el" href="class_element.html#a94144b13b5ba5907a27c27542e627990">w</a>, element_size_t <a class="el" href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">h</a>, <a class="el" href="class_element.html">Element</a> *<a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a>=0)</td></tr>
-<tr class="memdesc:aa3075292b66ce3174e3d1d43db9dd602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contsturct an element with the specified size and parent. <br/></td></tr>
+<tr class="memdesc:aa3075292b66ce3174e3d1d43db9dd602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an element with the specified size and parent. <br/></td></tr>
 <tr class="separator:aa3075292b66ce3174e3d1d43db9dd602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa216057d49337df7e6869b0e9c5ff581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa216057d49337df7e6869b0e9c5ff581"></a>
 <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa216057d49337df7e6869b0e9c5ff581">parent</a> () const </td></tr>
@@ -109,21 +109,13 @@ virtual <a class="el" href="class_element.html">Element</a> *&#160;</td><td clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a01cfd33869b85735c2c9a71b3ecc102b">set_child</a> (<a class="el" href="class_element.html">Element</a> *c)</td></tr>
 <tr class="memdesc:a01cfd33869b85735c2c9a71b3ecc102b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element's child. <br/></td></tr>
 <tr class="separator:a01cfd33869b85735c2c9a71b3ecc102b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec87c0614a143d385ddceb26d0a34055"><td class="memItemLeft" align="right" valign="top">virtual MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aec87c0614a143d385ddceb26d0a34055">draw</a> (MBitmap *b, mg_int_t x, mg_int_t y, bool center=false)</td></tr>
-<tr class="memdesc:aec87c0614a143d385ddceb26d0a34055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap.  <a href="#aec87c0614a143d385ddceb26d0a34055">More...</a><br/></td></tr>
-<tr class="separator:aec87c0614a143d385ddceb26d0a34055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1531924c103c524afb5f3601611235f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1531924c103c524afb5f3601611235f"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aa1531924c103c524afb5f3601611235f">draw</a> (MBitmap &amp;b, mg_int_t x, mg_int_t y, bool center=false)</td></tr>
-<tr class="memdesc:aa1531924c103c524afb5f3601611235f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:aa1531924c103c524afb5f3601611235f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b44ebcea5249240042bf1b43e4d22f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0b44ebcea5249240042bf1b43e4d22f"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ab0b44ebcea5249240042bf1b43e4d22f">draw</a> (MBitmap &amp;b, const MPoint &amp;p, bool center=false)</td></tr>
-<tr class="memdesc:ab0b44ebcea5249240042bf1b43e4d22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:ab0b44ebcea5249240042bf1b43e4d22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d2a42ba9bae490678671a09e8d81b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76d2a42ba9bae490678671a09e8d81b5"></a>
-MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a76d2a42ba9bae490678671a09e8d81b5">draw</a> (MBitmap *b, const MPoint &amp;p, bool center=false)</td></tr>
-<tr class="memdesc:a76d2a42ba9bae490678671a09e8d81b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
-<tr class="separator:a76d2a42ba9bae490678671a09e8d81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8afd03b9f3e915e1c6f1a492223b830"><td class="memItemLeft" align="right" valign="top">virtual MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ad8afd03b9f3e915e1c6f1a492223b830">draw</a> (MBitmap *b, mg_int_t x, mg_int_t y)</td></tr>
+<tr class="memdesc:ad8afd03b9f3e915e1c6f1a492223b830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap.  <a href="#ad8afd03b9f3e915e1c6f1a492223b830">More...</a><br/></td></tr>
+<tr class="separator:ad8afd03b9f3e915e1c6f1a492223b830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a551a9fd08eb367c2e126b4727c79d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a551a9fd08eb367c2e126b4727c79d1"></a>
+MDim&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a4a551a9fd08eb367c2e126b4727c79d1">draw</a> (MBitmap &amp;b, mg_int_t x, mg_int_t y)</td></tr>
+<tr class="memdesc:a4a551a9fd08eb367c2e126b4727c79d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on the specified bitmap. <br/></td></tr>
+<tr class="separator:a4a551a9fd08eb367c2e126b4727c79d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae330bd96a05876f7945a296db25d285d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae330bd96a05876f7945a296db25d285d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ae330bd96a05876f7945a296db25d285d">set_dim</a> (const MDim &amp;<a class="el" href="class_element.html#a145907025960e5d0e4b6c3caa7788ca0">dim</a>)</td></tr>
 <tr class="memdesc:ae330bd96a05876f7945a296db25d285d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dimensions as a percentage of the target bitmap size. <br/></td></tr>
@@ -171,9 +163,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a89bd430a399c59d5f27b6d6c83f66ba9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a89bd430a399c59d5f27b6d6c83f66ba9">event_handler</a> (int event)</td></tr>
 <tr class="memdesc:a89bd430a399c59d5f27b6d6c83f66ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_element.html" title="Element Class. ">Element</a> event handler.  <a href="#a89bd430a399c59d5f27b6d6c83f66ba9">More...</a><br/></td></tr>
 <tr class="separator:a89bd430a399c59d5f27b6d6c83f66ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7721d4276dc5589ebebcc4fed9b1bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd">draw_on_bitmap</a> (MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d, const ElementPadding &amp;padding)=0</td></tr>
-<tr class="memdesc:a9f7721d4276dc5589ebebcc4fed9b1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on a bitmap.  <a href="#a9f7721d4276dc5589ebebcc4fed9b1bd">More...</a><br/></td></tr>
-<tr class="separator:a9f7721d4276dc5589ebebcc4fed9b1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33dfd844f04ba01fb51b99600433c169"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a33dfd844f04ba01fb51b99600433c169">draw_to_scale</a> (MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d)</td></tr>
+<tr class="memdesc:a33dfd844f04ba01fb51b99600433c169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the element on a bitmap.  <a href="#a33dfd844f04ba01fb51b99600433c169">More...</a><br/></td></tr>
+<tr class="separator:a33dfd844f04ba01fb51b99600433c169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -232,12 +224,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00210">210</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00160">160</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aec87c0614a143d385ddceb26d0a34055"></a>
+<a class="anchor" id="ad8afd03b9f3e915e1c6f1a492223b830"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -260,13 +252,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">mg_int_t&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>center</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,11 +278,11 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The screen dimensions where the element was drawn </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_edit.html#ac31cbcc4f4354932920594286fd9cd00">Edit</a>.</p>
+<p>Reimplemented in <a class="el" href="class_edit.html#a5ea78a37f0a4c00241544bc48f510efc">Edit</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9f7721d4276dc5589ebebcc4fed9b1bd"></a>
+<a class="anchor" id="a33dfd844f04ba01fb51b99600433c169"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -304,7 +290,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Element::draw_on_bitmap </td>
+          <td class="memname">virtual void Element::draw_to_scale </td>
           <td>(</td>
           <td class="paramtype">MBitmap *&#160;</td>
           <td class="paramname"><em>b</em>, </td>
@@ -325,13 +311,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const MDim &amp;&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ElementPadding &amp;&#160;</td>
-          <td class="paramname"><em>padding</em>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,7 +321,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -356,7 +336,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_map.html#a13086d92ff4c602533ac1b329123f687">Map</a>, <a class="el" href="class_button_bar.html#a0190f6ae05fa9f910e12d0bcab1937ad">ButtonBar</a>, <a class="el" href="class_label.html#af86abe90bd55cfa84c209ee5c81ea89a">Label</a>, <a class="el" href="class_list.html#a6ef4d048ac985de80be95b767925100b">List</a>, <a class="el" href="class_list_item.html#a630832598b2b6fa8b57a5696d7516592">ListItem</a>, <a class="el" href="class_text.html#a8609019feca7df0c8333c39447d7b6a0">Text</a>, <a class="el" href="class_edit.html#a32b802d0536b7f2c4571378fd8502dae">Edit</a>, and <a class="el" href="class_label_metric.html#aaf4470522944023c1a6ece6319d632c6">LabelMetric</a>.</p>
+<p>Reimplemented in <a class="el" href="class_map.html#a072d5ca62032a6b7dc723b1841b20cb2">Map</a>, <a class="el" href="class_morse_input.html#a386bde092dee0824e428c583f3c219b5">MorseInput</a>, <a class="el" href="class_label.html#ac6336cf7d0c0d201672d27d365290e4d">Label</a>, <a class="el" href="class_list.html#a37e7e86e3f8ef1c08d13da4f5c665aac">List</a>, <a class="el" href="class_list_item.html#a78058cab8cada6d31641bdeac84b38e4">ListItem</a>, <a class="el" href="class_text.html#ac15810901420db7b2c94b8ce47438235">Text</a>, <a class="el" href="class_label_metric.html#a25d748055f130c1ef52282a7b5abaad4">LabelMetric</a>, <a class="el" href="class_rect.html#ac3bc9c1f34530298ec2c7aa0177e13ce">Rect</a>, <a class="el" href="class_progress_arc.html#a4dc71e8c42b2a79d7d3670946c0a6acf">ProgressArc</a>, and <a class="el" href="class_progress_bar.html#ac65886101db914bed514813a7b3d6847">ProgressBar</a>.</p>
 
 </div>
 </div>
@@ -390,7 +370,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>For transitions, the new element is returned; otherwise this </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_list_item_element.html#ad776842d2f4b000ab60893d27f24e3e8">ListItemElement</a>, <a class="el" href="class_list_item_callback.html#a25569f1a22b4e19588c3710c7161b4f2">ListItemCallback</a>, <a class="el" href="class_list_item_check.html#a0902509aa3e6861e0272850fafaf75c5">ListItemCheck</a>, <a class="el" href="class_list_item_toggle.html#a0b703f4d999ecff05aa0b95ed89db785">ListItemToggle</a>, <a class="el" href="class_button_bar.html#acdb93b2d4a1d5ab7e0e2968bb29860c7">ButtonBar</a>, <a class="el" href="class_map.html#acb50e5dda40de985fe1e83d9026d5498">Map</a>, <a class="el" href="class_list.html#a07fa366dab4c2df824742773600f1906">List</a>, <a class="el" href="class_text.html#ad03b18775349df44ce8031939a222bc4">Text</a>, and <a class="el" href="class_edit.html#a37bdb8e90300dd977477bcc393ff7d59">Edit</a>.</p>
+<p>Reimplemented in <a class="el" href="class_list_item_element.html#ad776842d2f4b000ab60893d27f24e3e8">ListItemElement</a>, <a class="el" href="class_list_item_callback.html#a25569f1a22b4e19588c3710c7161b4f2">ListItemCallback</a>, <a class="el" href="class_list_item_check.html#a0902509aa3e6861e0272850fafaf75c5">ListItemCheck</a>, <a class="el" href="class_list_item_toggle.html#a0b703f4d999ecff05aa0b95ed89db785">ListItemToggle</a>, <a class="el" href="class_morse_input.html#a2515b0387a35beaf38d937f4f5abc138">MorseInput</a>, <a class="el" href="class_button_bar.html#acdb93b2d4a1d5ab7e0e2968bb29860c7">ButtonBar</a>, <a class="el" href="class_map.html#acb50e5dda40de985fe1e83d9026d5498">Map</a>, <a class="el" href="class_list.html#a07fa366dab4c2df824742773600f1906">List</a>, <a class="el" href="class_map_menu.html#adf888623fe5d4c3f3980628fb4252880">MapMenu</a>, <a class="el" href="class_message_list.html#aadf4f7b75383aea32ab913d95acfa689">MessageList</a>, <a class="el" href="class_text.html#ad03b18775349df44ce8031939a222bc4">Text</a>, <a class="el" href="class_screen.html#ac95febaa549fce39e251db70e5ca5623">Screen</a>, <a class="el" href="class_edit.html#a37bdb8e90300dd977477bcc393ff7d59">Edit</a>, and <a class="el" href="class_discover.html#a30dd9e3fcda8bc3909d4f59f421a60f1">Discover</a>.</p>
 
 </div>
 </div>
@@ -426,7 +406,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div class="line"><a class="code" href="class_label.html">Label</a> l;</div>
 <div class="line">l.<a class="code" href="class_element.html#ae330bd96a05876f7945a296db25d285d">set_dim</a>(500,500); <span class="comment">//sets dimensions to half the size of the target bitmap</span></div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00155">155</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_element_8hpp_source.html#l00109">109</a> of file <a class="el" href="_element_8hpp_source.html">Element.hpp</a>.</p>
 
 </div>
 </div>

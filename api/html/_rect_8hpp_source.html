@@ -40,16 +40,19 @@ title: Fogo IO Docs
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Element.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>Rect : <span class="keyword">public</span> <a class="code" href="class_element.html">Element</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;     Rect();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;     Rect(element_size_t w, element_size_t h);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd">draw_on_bitmap</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d, <span class="keyword">const</span> ElementPadding &amp; padding);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_RECT_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00069">Element.hpp:69</a></div></div>
-<div class="ttc" id="class_element_html_a9f7721d4276dc5589ebebcc4fed9b1bd"><div class="ttname"><a href="class_element.html#a9f7721d4276dc5589ebebcc4fed9b1bd">Element::draw_on_bitmap</a></div><div class="ttdeci">virtual void draw_on_bitmap(MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d, const ElementPadding &amp;padding)=0</div><div class="ttdoc">Draw the element on a bitmap. </div></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_rect.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rect.html">Rect</a> : <span class="keyword">public</span> <a class="code" href="class_element.html">Element</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;     <a class="code" href="class_rect.html">Rect</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;     <a class="code" href="class_rect.html">Rect</a>(element_size_t <a class="code" href="class_element.html#a94144b13b5ba5907a27c27542e627990">w</a>, element_size_t <a class="code" href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">h</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_rect.html#ac3bc9c1f34530298ec2c7aa0177e13ce">draw_to_scale</a>(MBitmap * b, mg_int_t x, mg_int_t y, <span class="keyword">const</span> MDim &amp; d);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_RECT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00027">Element.hpp:27</a></div></div>
+<div class="ttc" id="class_element_html_a94144b13b5ba5907a27c27542e627990"><div class="ttname"><a href="class_element.html#a94144b13b5ba5907a27c27542e627990">Element::w</a></div><div class="ttdeci">uint8_t w() const </div><div class="ttdoc">Element width as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00079">Element.hpp:79</a></div></div>
+<div class="ttc" id="class_rect_html"><div class="ttname"><a href="class_rect.html">Rect</a></div><div class="ttdoc">Rect Class. </div><div class="ttdef"><b>Definition:</b> <a href="_rect_8hpp_source.html#l00018">Rect.hpp:18</a></div></div>
+<div class="ttc" id="class_rect_html_ac3bc9c1f34530298ec2c7aa0177e13ce"><div class="ttname"><a href="class_rect.html#ac3bc9c1f34530298ec2c7aa0177e13ce">Rect::draw_to_scale</a></div><div class="ttdeci">virtual void draw_to_scale(MBitmap *b, mg_int_t x, mg_int_t y, const MDim &amp;d)</div><div class="ttdoc">Draw the element on a bitmap. </div></div>
+<div class="ttc" id="class_element_html_aff6c5b5b2f33685abc369b460671bc1a"><div class="ttname"><a href="class_element.html#aff6c5b5b2f33685abc369b460671bc1a">Element::h</a></div><div class="ttdeci">uint8_t h() const </div><div class="ttdoc">Element height as a percentage of the target bitmap. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00081">Element.hpp:81</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

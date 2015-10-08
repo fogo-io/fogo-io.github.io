@@ -1,0 +1,38 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_app_controller.html" title="Controller API. " alt="" coords="6,54,109,79"/>
+<area shape="rect" id="node2" href="$class_app.html" title="App State Machine Class. " alt="" coords="187,5,232,30"/>
+<area shape="rect" id="node3" href="$class_app_state.html" title="App State (to be used in a State machine see App) " alt="" coords="171,54,247,79"/>
+<area shape="rect" id="node4" href="$class_screen.html" title="Screen Class. " alt="" coords="178,103,241,129"/>
+<area shape="rect" id="node5" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="355,78,402,103"/>
+<area shape="rect" id="node6" href="$class_element.html" title="Element Class. " alt="" coords="22,547,92,573"/>
+<area shape="rect" id="node7" href="$class_button_bar.html" title="Button Bar. " alt="" coords="169,202,250,227"/>
+<area shape="rect" id="node8" href="$class_edit.html" title="Edit Element. " alt="" coords="187,251,231,277"/>
+<area shape="rect" id="node16" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="157,374,262,399"/>
+<area shape="rect" id="node19" href="$class_label.html" title="Label Element. " alt="" coords="182,447,236,473"/>
+<area shape="rect" id="node21" href="$class_list.html" title="List Class. " alt="" coords="188,522,230,547"/>
+<area shape="rect" id="node24" href="$class_list_item.html" title="List Item Class. " alt="" coords="175,571,243,597"/>
+<area shape="rect" id="node29" href="$class_morse_input.html" title="Morse Input Class. " alt="" coords="165,621,253,646"/>
+<area shape="rect" id="node30" href="$class_panel.html" title="Panel Class. " alt="" coords="182,670,237,695"/>
+<area shape="rect" id="node31" href="$class_progress.html" title="Progress Class. " alt="" coords="172,745,247,770"/>
+<area shape="rect" id="node35" href="$class_rect.html" title="Rect Class. " alt="" coords="185,794,234,819"/>
+<area shape="rect" id="node36" href="$class_text.html" title="Text Box. " alt="" coords="186,843,232,869"/>
+<area shape="rect" id="node9" href="$class_edit_setting_int.html" title="Edit Integer Class. " alt="" coords="328,127,429,153"/>
+<area shape="rect" id="node10" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="314,177,443,202"/>
+<area shape="rect" id="node14" href="$class_edit_sys_morse_delay.html" title="Edit Morse Delay. " alt="" coords="310,226,448,251"/>
+<area shape="rect" id="node15" href="$class_edit_sys_units.html" title="Edit System Units Setting. " alt="" coords="330,275,427,301"/>
+<area shape="rect" id="node11" href="$class_edit_sys_brightness_high.html" title="Edit System High Brightness Class. " alt="" coords="496,127,653,153"/>
+<area shape="rect" id="node12" href="$class_edit_sys_brightness_low.html" title="Edit System Low Brightness Class. " alt="" coords="498,177,652,202"/>
+<area shape="rect" id="node13" href="$class_edit_sys_brightness_med.html" title="Edit System Med Brightness Class. " alt="" coords="497,226,652,251"/>
+<area shape="rect" id="node17" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="339,325,418,350"/>
+<area shape="rect" id="node18" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="337,374,420,399"/>
+<area shape="rect" id="node20" href="$class_label_metric.html" title="Label with Value Class. " alt="" coords="334,423,424,449"/>
+<area shape="rect" id="node22" href="$class_discover.html" title="Discover Class. " alt="" coords="342,473,415,498"/>
+<area shape="rect" id="node23" href="$class_map_menu.html" title="Map Menu Class. " alt="" coords="338,522,419,547"/>
+<area shape="rect" id="node25" href="$class_list_item_callback.html" title="List Item Callback Class. " alt="" coords="319,571,438,597"/>
+<area shape="rect" id="node26" href="$class_list_item_check.html" title="List Item Check (for use in a checklist) " alt="" coords="326,621,432,646"/>
+<area shape="rect" id="node27" href="$class_list_item_element.html" title="List Item Element Class. " alt="" coords="320,670,437,695"/>
+<area shape="rect" id="node28" href="$class_list_item_toggle.html" title="Toggle Item. " alt="" coords="325,719,432,745"/>
+<area shape="rect" id="node32" href="$class_progress_arc.html" title="Progress Arc Class. " alt="" coords="331,769,426,794"/>
+<area shape="rect" id="node33" href="$class_progress_bar.html" title="Progress Bar Class. " alt="" coords="331,818,426,843"/>
+<area shape="rect" id="node34" href="$class_progress_circle.html" title="Progress Circle Class. " alt="" coords="324,867,433,893"/>
+</map>

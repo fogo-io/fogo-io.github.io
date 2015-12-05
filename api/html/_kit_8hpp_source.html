@@ -51,7 +51,7 @@ title: Fogo IO Docs
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          UPDATE_EXIT</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;     };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">int</span> update();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">int</span> update(<span class="keywordtype">bool</span> update_event = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">inline</span> <a class="code" href="class_element.html">Element</a> * current(){ <span class="keywordflow">return</span> _current; }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_current(<a class="code" href="class_element.html">Element</a> * current){ _current = current; }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -61,13 +61,17 @@ title: Fogo IO Docs
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">virtual</span> MDim draw(MBitmap * b, mg_int_t x, mg_int_t y);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <span class="keywordtype">void</span> draw_animation(<span class="keywordtype">bool</span> draw_bar = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <a class="code" href="class_element.html">Element</a> * _current;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     <a class="code" href="class_element.html">Element</a> * _default;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_KIT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">void</span> set_force_animation(<span class="keywordtype">bool</span> v = <span class="keyword">true</span>){ _force_animation = v; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keyword">inline</span> <span class="keywordtype">bool</span> force_animation(){ <span class="keywordflow">return</span> _force_animation; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <a class="code" href="class_element.html">Element</a> * _current;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <a class="code" href="class_element.html">Element</a> * _default;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keywordtype">bool</span> _force_animation;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UI_KIT_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00027">Element.hpp:27</a></div></div>
 <div class="ttc" id="class_kit_html"><div class="ttname"><a href="class_kit.html">Kit</a></div><div class="ttdoc">Kit Class. </div><div class="ttdef"><b>Definition:</b> <a href="_kit_8hpp_source.html#l00017">Kit.hpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

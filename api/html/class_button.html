@@ -42,7 +42,7 @@ title: Fogo IO Docs
 
 <p><code>#include &lt;<a class="el" href="_button_8hpp_source.html">Button.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Access to button input</p>
+<div class="textblock"><p>This is a static class that provides direct access to button presses. This class is not used in normal situations because button presses are converted to events. If you need finer access to the buttons you can use this API during an <a class="el" href="class_element.html#aec8e61fad279c536e0b2dd041927d751a139823d1c99e69eb9e700d05baf1c1ca" title="Update the element (use App::set_update_period() to set frequency of execution) ">Element::UPDATE</a> event.</p>
 <p>Here is an example of using the <a class="el" href="class_button.html" title="Button API. ">Button</a> API.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fogo/Button.hpp&gt;</span></div>
@@ -58,7 +58,7 @@ title: Fogo IO Docs
 <div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Left Button %ld, %ld\n&quot;</span>, <a class="code" href="class_button.html#a8cc0ac1bd2a0055ac7cb6054c58ec34d">Button::left_pressed</a>(), <a class="code" href="class_button.html#a8cc0ac1bd2a0055ac7cb6054c58ec34d">Button::left_pressed</a>());</div>
 </div><!-- fragment --><p> will output the following assuming the left button is pressed for 53ms before the code is executed: </p>
 <pre class="fragment">Left Button 53, 0</pre> 
-<p>Definition at line <a class="el" href="_button_8hpp_source.html#l00046">46</a> of file <a class="el" href="_button_8hpp_source.html">Button.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_button_8hpp_source.html#l00048">48</a> of file <a class="el" href="_button_8hpp_source.html">Button.hpp</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -191,7 +191,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_button_8hpp_source.html#l00050">50</a> of file <a class="el" href="_button_8hpp_source.html">Button.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_button_8hpp_source.html#l00052">52</a> of file <a class="el" href="_button_8hpp_source.html">Button.hpp</a>.</p>
 
 </div>
 </div>

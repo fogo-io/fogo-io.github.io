@@ -81,9 +81,9 @@
 <text text-anchor="start" x="20.9756" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">+ child()</text>
 <text text-anchor="start" x="20.9756" y="-593" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_child()</text>
 <text text-anchor="start" x="20.9756" y="-583" font-family="Helvetica,sans-Serif" font-size="10.00">+ draw()</text>
-<text text-anchor="start" x="20.9756" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00">+ draw()</text>
+<text text-anchor="start" x="20.9756" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_dim()</text>
 <text text-anchor="start" x="20.9756" y="-563" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_dim()</text>
-<text text-anchor="start" x="20.9756" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">and 36 more...</text>
+<text text-anchor="start" x="20.9756" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">and 35 more...</text>
 <text text-anchor="start" x="20.9756" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ dim_on_bitmap()</text>
 <text text-anchor="start" x="20.9756" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
 <text text-anchor="start" x="20.9756" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+ scale()</text>

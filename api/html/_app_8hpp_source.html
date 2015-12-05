@@ -39,44 +39,64 @@ title: Fogo IO Docs
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APP_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;applib/Signal.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;applib/Timer.hpp&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Ui/Kit.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;AppController.hpp&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;Display.hpp&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_app.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_app.html">App</a> : <span class="keyword">public</span> <a class="code" href="class_app_controller.html">AppController</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> init(<a class="code" href="class_element.html">Element</a> * start, <span class="keyword">const</span> <span class="keywordtype">char</span> * app_name);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_app.html#ab650561ee7658899f248144ba1fa7212">run</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> parse_args(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;Ui/Kit.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;Ui/Notification.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;AppController.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;Display.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_app.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_app.html">App</a> : <span class="keyword">public</span> <a class="code" href="class_app_controller.html">AppController</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> init(<a class="code" href="class_element.html">Element</a> * start, <span class="keyword">const</span> <span class="keywordtype">char</span> * app_name);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_app.html#a7d8515cbd4773dfdd3474f72daf5cf23">run</a>(<span class="keywordtype">bool</span> animate = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> events(){ <span class="keywordflow">return</span> events_; }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> events_reset(){ events_ = 0; }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> set_default(<a class="code" href="class_element.html">Element</a> * element){ kit.set_default_element(element); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="class_element.html">Element</a> * default_element(){ <span class="keywordflow">return</span> kit.default_element(); }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> count_screen_total(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> count_screen_value();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keyword">static</span> <a class="code" href="class_kit.html">Kit</a> kit;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_app.html#a79dc96efb2228e25def933cb2d2f9c04">draw_element</a>(<a class="code" href="class_element.html">Element</a> * element, <span class="keywordtype">bool</span> draw);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> events_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> event_sigaction(<span class="keywordtype">int</span> a, siginfo_t * sig_info, <span class="keywordtype">void</span> * context);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">size_t</span> num_parameters_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* APP_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_app.html#af8ef8aa92804056b048ce4a279a01ba3">parse_args</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> events(){ <span class="keywordflow">return</span> _events; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> events_reset(){ _events = 0; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> set_default(<a class="code" href="class_element.html">Element</a> * element){ _kit.set_default_element(element); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="class_element.html">Element</a> * default_element(){ <span class="keywordflow">return</span> _kit.default_element(); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="class_kit.html">Kit</a> * kit(){ <span class="keywordflow">return</span> &amp;_kit; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_app.html#a1102205bf6e5232bcfb31ebce569629f">   68</a></span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_app.html#a1102205bf6e5232bcfb31ebce569629f">set_update_period</a>(u16 v){ _update_period = v; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     <span class="comment">/* \brief Returns the update period in ms */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> u16 update_period(){ <span class="keywordflow">return</span> _update_period; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> count_screen_total(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> count_screen_value();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;     <span class="keyword">static</span> <a class="code" href="class_kit.html">Kit</a> _kit;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;     <span class="keyword">static</span> Timer app_timer;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     <span class="keyword">static</span> Timer update_timer;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;     <span class="keyword">static</span> Notification notification;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> _events;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> event_sigaction(<span class="keywordtype">int</span> a, siginfo_t * sig_info, <span class="keywordtype">void</span> * context);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">size_t</span> _num_parameters;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keyword">static</span> u16 _update_period;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* APP_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_app_controller_html"><div class="ttname"><a href="class_app_controller.html">AppController</a></div><div class="ttdoc">Controller API. </div><div class="ttdef"><b>Definition:</b> <a href="_app_controller_8hpp_source.html#l00042">AppController.hpp:42</a></div></div>
 <div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdoc">Element Class. </div><div class="ttdef"><b>Definition:</b> <a href="_element_8hpp_source.html#l00027">Element.hpp:27</a></div></div>
-<div class="ttc" id="class_app_html_ab650561ee7658899f248144ba1fa7212"><div class="ttname"><a href="class_app.html#ab650561ee7658899f248144ba1fa7212">App::run</a></div><div class="ttdeci">static bool run()</div><div class="ttdoc">Run the App. </div></div>
-<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">App State Machine Class. </div><div class="ttdef"><b>Definition:</b> <a href="_app_8hpp_source.html#l00020">App.hpp:20</a></div></div>
+<div class="ttc" id="class_app_html_a1102205bf6e5232bcfb31ebce569629f"><div class="ttname"><a href="class_app.html#a1102205bf6e5232bcfb31ebce569629f">App::set_update_period</a></div><div class="ttdeci">static void set_update_period(u16 v)</div><div class="ttdoc">Sets the update period of the App. </div><div class="ttdef"><b>Definition:</b> <a href="_app_8hpp_source.html#l00068">App.hpp:68</a></div></div>
+<div class="ttc" id="class_app_html_af8ef8aa92804056b048ce4a279a01ba3"><div class="ttname"><a href="class_app.html#af8ef8aa92804056b048ce4a279a01ba3">App::parse_args</a></div><div class="ttdeci">static void parse_args(int argc, char *argv[])</div><div class="ttdoc">Parses the main() arguments. </div></div>
+<div class="ttc" id="class_app_html_a79dc96efb2228e25def933cb2d2f9c04"><div class="ttname"><a href="class_app.html#a79dc96efb2228e25def933cb2d2f9c04">App::draw_element</a></div><div class="ttdeci">static void draw_element(Element *element, bool draw)</div><div class="ttdoc">This draws the specified element. </div></div>
+<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">App State Machine Class. </div><div class="ttdef"><b>Definition:</b> <a href="_app_8hpp_source.html#l00022">App.hpp:22</a></div></div>
+<div class="ttc" id="class_app_html_a7d8515cbd4773dfdd3474f72daf5cf23"><div class="ttname"><a href="class_app.html#a7d8515cbd4773dfdd3474f72daf5cf23">App::run</a></div><div class="ttdeci">static bool run(bool animate=true)</div><div class="ttdoc">Run the App. </div></div>
 <div class="ttc" id="class_kit_html"><div class="ttname"><a href="class_kit.html">Kit</a></div><div class="ttdoc">Kit Class. </div><div class="ttdef"><b>Definition:</b> <a href="_kit_8hpp_source.html#l00017">Kit.hpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

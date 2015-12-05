@@ -1,5 +1,5 @@
 <map id="Screen" name="Screen">
-<area shape="rect" id="node4" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="88,598,236,805"/>
+<area shape="rect" id="node4" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="89,611,237,818"/>
 <area shape="rect" id="node2" href="$class_element.html" title="Element Class. " alt="" coords="5,6,147,386"/>
-<area shape="rect" id="node3" href="$class_app_controller.html" title="Controller API. " alt="" coords="170,93,331,299"/>
+<area shape="rect" id="node3" href="$class_app_controller.html" title="Controller API. " alt="" coords="171,93,332,299"/>
 </map>

@@ -39,27 +39,32 @@ title: Fogo IO Docs
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIGHT_HPP_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_light.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light.html">Light</a> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#a6732e4efd128daef39f9bb52d24c03ea">enable</a>(<span class="keywordtype">bool</span> v = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">   39</a></span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">disable</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_light.html#a6732e4efd128daef39f9bb52d24c03ea">enable</a>(<span class="keyword">false</span>); }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#a782d7e68f80575724108879e8ec7b169">set_brightness</a>(<span class="keywordtype">float</span> v);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_light.html#afce002d9ad6247af903fb82a5f46672d">enabled</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_light.html#a273bd468cbc1359c021619a858ad1705">brightness</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keyword">static</span> uint32_t cal(<span class="keywordtype">float</span> target);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;applib/Pid.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_light.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light.html">Light</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#a6732e4efd128daef39f9bb52d24c03ea">enable</a>(<span class="keywordtype">bool</span> v = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">   40</a></span>&#160;     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">disable</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_light.html#a6732e4efd128daef39f9bb52d24c03ea">enable</a>(<span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#a782d7e68f80575724108879e8ec7b169">set_brightness</a>(<span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_light.html#afce002d9ad6247af903fb82a5f46672d">enabled</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_light.html#a273bd468cbc1359c021619a858ad1705">brightness</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> update(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIGHT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     <span class="keyword">static</span> uint32_t cal(<span class="keywordtype">float</span> target);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LIGHT_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_light_html_a6732e4efd128daef39f9bb52d24c03ea"><div class="ttname"><a href="class_light.html#a6732e4efd128daef39f9bb52d24c03ea">Light::enable</a></div><div class="ttdeci">static int enable(bool v=true)</div><div class="ttdoc">Turn the light on and off. </div></div>
-<div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdoc">Light Class. </div><div class="ttdef"><b>Definition:</b> <a href="_light_8hpp_source.html#l00033">Light.hpp:33</a></div></div>
+<div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdoc">Light Class. </div><div class="ttdef"><b>Definition:</b> <a href="_light_8hpp_source.html#l00034">Light.hpp:34</a></div></div>
 <div class="ttc" id="class_light_html_afce002d9ad6247af903fb82a5f46672d"><div class="ttname"><a href="class_light.html#afce002d9ad6247af903fb82a5f46672d">Light::enabled</a></div><div class="ttdeci">static bool enabled(void)</div><div class="ttdoc">Checks if light is on. </div></div>
-<div class="ttc" id="class_light_html_ac85bc51d451ac7c6852b7c81e15f09ee"><div class="ttname"><a href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">Light::disable</a></div><div class="ttdeci">static int disable()</div><div class="ttdoc">Turn the light off. </div><div class="ttdef"><b>Definition:</b> <a href="_light_8hpp_source.html#l00039">Light.hpp:39</a></div></div>
+<div class="ttc" id="class_light_html_ac85bc51d451ac7c6852b7c81e15f09ee"><div class="ttname"><a href="class_light.html#ac85bc51d451ac7c6852b7c81e15f09ee">Light::disable</a></div><div class="ttdeci">static int disable()</div><div class="ttdoc">Turn the light off. </div><div class="ttdef"><b>Definition:</b> <a href="_light_8hpp_source.html#l00040">Light.hpp:40</a></div></div>
 <div class="ttc" id="class_light_html_a782d7e68f80575724108879e8ec7b169"><div class="ttname"><a href="class_light.html#a782d7e68f80575724108879e8ec7b169">Light::set_brightness</a></div><div class="ttdeci">static int set_brightness(float v)</div><div class="ttdoc">Set the light brightness between 0.0 and 100.0. </div></div>
 <div class="ttc" id="class_light_html_a273bd468cbc1359c021619a858ad1705"><div class="ttname"><a href="class_light.html#a273bd468cbc1359c021619a858ad1705">Light::brightness</a></div><div class="ttdeci">static float brightness(void)</div><div class="ttdoc">Returns the current brightness value (0.0 to 100.0) </div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -140,74 +140,102 @@
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structmessage__text__t.html#ac513150a0e36dd669233f6e3b825b1fd">   43</a></span>&#160;     <span class="keywordtype">char</span> data[MESSAGE_MAX_LENGTH+1] ;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <a class="code" href="structmessage__text__t.html">message_text_t</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     u32 * addr;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <span class="keywordtype">void</span> * data;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <span class="keywordtype">size_t</span> nbyte;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} message_request_recv_t;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     sn_t sn;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;     <span class="keyword">const</span> <span class="keywordtype">void</span> * data;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="keywordtype">size_t</span> nbyte;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     int (*progress)(int,int);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} message_request_send_t;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define MESSAGE_SEND_COORD (1&lt;&lt;7)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MESSAGE_SEND_ELE (1&lt;&lt;6)</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//over the air type</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;     MESSAGE_SEND_TEXT,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;     MESSAGE_SEND_AUDIO, <span class="comment">//don&#39;t care about ACK -- just blast data in real time</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     MESSAGE_SEND_FILE,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     MESSAGE_SEND_CONTACT,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     MESSAGE_SEND_CONTACT_REQUEST,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     MESSAGE_SEND_LOC,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     MESSAGE_SEND_LOC_REQUEST</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;     u8 id; <span class="comment">//message type and id</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     u16 size; <span class="comment">//total number of bytes in packet stream</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;     i32 lat;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;     i32 lon;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;     i32 ele;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     <span class="comment">//start of message</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} message_packet_t;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <span class="keyword">union </span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          u8 which; <span class="comment">//input</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          sn_t sn; <span class="comment">//output</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} message_request_contact_t;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     message_packet_t hdr;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;     contact_t contact;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} message_request_send_contact_t;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     message_packet_t hdr;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     <span class="keywordtype">char</span> data[MESSAGE_MAX_LENGTH+1];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} message_request_send_text_t;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;     MESSAGE_REQUEST_DISCOVER,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;     MESSAGE_REQUEST_SEND,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;     MESSAGE_REQUEST_RECV,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;     MESSAGE_REQUEST_SEND_CONTACT,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     MESSAGE_REQUEST_CONTACT,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     MESSAGE_REQUEST_CONTACT_COUNT,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     MESSAGE_REQUEST_CONTACT_CLEAR,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     MESSAGE_REQUEST_TOTAL</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MESSAGE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     <span class="keywordtype">void</span> * context;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     int (*progress)(<span class="keywordtype">void</span>*,int,int);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;     i8 rssi;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} message_request_send_t;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define MESSAGE_SEND_COORD (1&lt;&lt;7)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MESSAGE_SEND_ELE (1&lt;&lt;6)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//over the air type</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;     MESSAGE_SEND_TEXT ,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     MESSAGE_SEND_AUDIO ,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;     MESSAGE_SEND_REALTIME_AUDIO ,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     MESSAGE_SEND_FILE,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     MESSAGE_SEND_CONTACT,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     MESSAGE_SEND_CONTACT_REQUEST,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     MESSAGE_SEND_LOC,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;     MESSAGE_SEND_LOC_REQUEST</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html">   78</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html#ab6551bb60b8b3372cab6231de3d15f55">   79</a></span>&#160;     u8 <span class="keywordtype">id</span> ;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     u8 resd;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html#a73279234092aee3e0b168b5710e7f9a6">   81</a></span>&#160;     u16 size ; <span class="comment">//total number of bytes in packet stream</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html#aa9698976d6591ae5a4bce2585e64e524">   82</a></span>&#160;     i32 lat ;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html#a2b93d6a66ffe43d3b0e4873d4416580a">   83</a></span>&#160;     i32 lon ;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structmessage__packet__t.html#afcaff78d440fe05880499b0fee44e166">   84</a></span>&#160;     i32 ele ;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     <span class="comment">//start of message</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <a class="code" href="structmessage__packet__t.html">message_packet_t</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structmessage__realtime__audio__packet__t.html">   89</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structmessage__realtime__audio__packet__t.html#a3616faac21fcf7ea151565caed656b9b">   90</a></span>&#160;     u8 <span class="keywordtype">id</span> ;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     u8 resd;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structmessage__realtime__audio__packet__t.html#afefd32e249f109eefb1bd09030b6d81b">   92</a></span>&#160;     u16 size ; <span class="comment">//total number of bytes in packet stream</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     u16 resd_align6;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     <span class="comment">//start of message</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <a class="code" href="structmessage__realtime__audio__packet__t.html">message_realtime_audio_packet_t</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          u8 which; <span class="comment">//input</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          sn_t sn; <span class="comment">//output</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;     };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} message_request_contact_t;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     <a class="code" href="structmessage__packet__t.html">message_packet_t</a> hdr;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     contact_t contact;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} message_packet_send_contact_t;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     <a class="code" href="structmessage__packet__t.html">message_packet_t</a> hdr;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;     <a class="code" href="structloc__velocity__t.html">loc_velocity_t</a> velocity;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} message_packet_send_loc_t;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;     <a class="code" href="structmessage__packet__t.html">message_packet_t</a> hdr;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;     <span class="keywordtype">char</span> data[MESSAGE_MAX_LENGTH+1];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} message_request_send_text_t;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     sn_t sn;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;     u32 frequency;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;     i8 rssi;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} message_request_set_channel_t;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;     MESSAGE_REQUEST_DISCOVER,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;     MESSAGE_REQUEST_SEND,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;     MESSAGE_REQUEST_RECV,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;     MESSAGE_REQUEST_SEND_CONTACT,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;     MESSAGE_REQUEST_CONTACT,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;     MESSAGE_REQUEST_CONTACT_COUNT,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;     MESSAGE_REQUEST_CONTACT_CLEAR,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;     MESSAGE_REQUEST_SET_CHANNEL,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;     MESSAGE_REQUEST_TOTAL</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MESSAGE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structmessage__packet__t_html"><div class="ttname"><a href="structmessage__packet__t.html">message_packet_t</a></div><div class="ttdoc">Over the air packet structure. </div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00078">message.h:78</a></div></div>
 <div class="ttc" id="structloc__coord__t_html"><div class="ttname"><a href="structloc__coord__t.html">loc_coord_t</a></div><div class="ttdoc">GPS coordinate. </div><div class="ttdef"><b>Definition:</b> <a href="location_8h_source.html#l00018">location.h:18</a></div></div>
+<div class="ttc" id="structloc__velocity__t_html"><div class="ttname"><a href="structloc__velocity__t.html">loc_velocity_t</a></div><div class="ttdoc">Velocity (speed and direction) </div><div class="ttdef"><b>Definition:</b> <a href="location_8h_source.html#l00039">location.h:39</a></div></div>
+<div class="ttc" id="structmessage__realtime__audio__packet__t_html"><div class="ttname"><a href="structmessage__realtime__audio__packet__t.html">message_realtime_audio_packet_t</a></div><div class="ttdoc">Over the air packet structure for real-time encoded audio. </div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00089">message.h:89</a></div></div>
 <div class="ttc" id="structmessage__text__t_html"><div class="ttname"><a href="structmessage__text__t.html">message_text_t</a></div><div class="ttdoc">Message File Structure. </div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00041">message.h:41</a></div></div>
 <div class="ttc" id="location_8h_html"><div class="ttname"><a href="location_8h.html">location.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

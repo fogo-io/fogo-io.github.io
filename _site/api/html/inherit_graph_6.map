@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_f_sys.html" title="System Settings (brightness, version, units) " alt="" coords="6,5,58,30"/>
+<area shape="rect" id="node1" href="$class_edit.html" title="Edit Element. " alt="" coords="6,103,50,129"/>
+<area shape="rect" id="node2" href="$class_edit_setting_int.html" title="Edit Integer Class. " alt="" coords="123,5,224,30"/>
+<area shape="rect" id="node3" href="$class_edit_sys_backlight_time.html" title="Edit System Backlight Brightness. " alt="" coords="98,54,248,79"/>
+<area shape="rect" id="node4" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="109,103,238,129"/>
+<area shape="rect" id="node8" href="$class_edit_sys_morse_delay.html" title="Edit Morse Delay. " alt="" coords="104,153,242,178"/>
+<area shape="rect" id="node9" href="$class_edit_sys_units.html" title="Edit System Units Setting. " alt="" coords="125,202,222,227"/>
+<area shape="rect" id="node5" href="$class_edit_sys_brightness_high.html" title="Edit System High Brightness Class. " alt="" coords="296,54,453,79"/>
+<area shape="rect" id="node6" href="$class_edit_sys_brightness_low.html" title="Edit System Low Brightness Class. " alt="" coords="298,103,452,129"/>
+<area shape="rect" id="node7" href="$class_edit_sys_brightness_med.html" title="Edit System Med Brightness Class. " alt="" coords="297,153,452,178"/>
 </map>

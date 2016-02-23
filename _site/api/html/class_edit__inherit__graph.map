@@ -1,10 +1,10 @@
 <map id="Edit" name="Edit">
-<area shape="rect" id="node3" href="$class_edit_setting_int.html" title="Edit Integer Class. " alt="" coords="73,651,193,805"/>
-<area shape="rect" id="node4" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="218,658,368,798"/>
-<area shape="rect" id="node8" href="$class_edit_sys_morse_delay.html" title="Edit Morse Delay. " alt="" coords="392,658,549,798"/>
-<area shape="rect" id="node9" href="$class_edit_sys_units.html" title="Edit System Units Setting. " alt="" coords="573,658,689,798"/>
-<area shape="rect" id="node2" href="$class_element.html" title="Element Class. " alt="" coords="311,6,452,386"/>
-<area shape="rect" id="node5" href="$class_edit_sys_brightness_high.html" title="Edit System High Brightness Class. " alt="" coords="5,854,181,954"/>
-<area shape="rect" id="node6" href="$class_edit_sys_brightness_low.html" title="Edit System Low Brightness Class. " alt="" coords="206,854,380,954"/>
-<area shape="rect" id="node7" href="$class_edit_sys_brightness_med.html" title="Edit System Med Brightness Class. " alt="" coords="404,854,579,954"/>
+<area shape="rect" id="node2" href="$class_edit_setting_int.html" title="Edit Integer Class. " alt="" coords="5,222,125,375"/>
+<area shape="rect" id="node3" href="$class_edit_sys_backlight_time.html" title="Edit System Backlight Brightness. " alt="" coords="150,229,319,369"/>
+<area shape="rect" id="node4" href="$class_edit_sys_brightness.html" title="Edit System Brightness. " alt="" coords="344,229,493,369"/>
+<area shape="rect" id="node8" href="$class_edit_sys_morse_delay.html" title="Edit Morse Delay. " alt="" coords="517,229,675,369"/>
+<area shape="rect" id="node9" href="$class_edit_sys_units.html" title="Edit System Units Setting. " alt="" coords="699,229,815,369"/>
+<area shape="rect" id="node5" href="$class_edit_sys_brightness_high.html" title="Edit System High Brightness Class. " alt="" coords="130,425,307,525"/>
+<area shape="rect" id="node6" href="$class_edit_sys_brightness_low.html" title="Edit System Low Brightness Class. " alt="" coords="331,425,505,525"/>
+<area shape="rect" id="node7" href="$class_edit_sys_brightness_med.html" title="Edit System Med Brightness Class. " alt="" coords="529,425,704,525"/>
 </map>

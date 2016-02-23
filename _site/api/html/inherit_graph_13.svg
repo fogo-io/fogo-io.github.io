@@ -10,9 +10,9 @@
 <title>Graphical Class Hierarchy</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structloc__coord__t.html" target="_top" xlink:title="GPS coordinate. ">
-<polygon fill="none" stroke="black" points="0.150391,-0 0.150391,-18 67.8496,-18 67.8496,-0 0.150391,-0"/>
-<text text-anchor="middle" x="34" y="-6" font-family="Helvetica,sans-Serif" font-size="10.00">loc_coord_t</text>
+<g id="a_node1"><a xlink:href="class_graph_1_1_axis.html" target="_top" xlink:title="Graph Axis Class. ">
+<polygon fill="none" stroke="black" points="-0.120605,-0 -0.120605,-18 68.1206,-18 68.1206,-0 -0.120605,-0"/>
+<text text-anchor="middle" x="34" y="-6" font-family="Helvetica,sans-Serif" font-size="10.00">Graph::Axis</text>
 </a>
 </g>
 </g>

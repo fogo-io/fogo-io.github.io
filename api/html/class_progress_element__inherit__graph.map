@@ -1,6 +1,5 @@
 <map id="ProgressElement" name="ProgressElement">
-<area shape="rect" id="node3" href="$class_progress_arc.html" title="Progress Arc Class. " alt="" coords="4,625,131,725"/>
-<area shape="rect" id="node4" href="$class_progress_bar.html" title="Progress Bar Class. " alt="" coords="156,625,283,725"/>
-<area shape="rect" id="node5" href="$class_progress_circle.html" title="Progress Circle Class. " alt="" coords="307,631,436,718"/>
-<area shape="rect" id="node2" href="$class_element.html" title="Element Class. " alt="" coords="149,6,291,386"/>
+<area shape="rect" id="node2" href="$class_progress_arc.html" title="Progress Arc Class. " alt="" coords="4,195,131,295"/>
+<area shape="rect" id="node3" href="$class_progress_bar.html" title="Progress Bar Class. " alt="" coords="156,195,283,295"/>
+<area shape="rect" id="node4" href="$class_progress_circle.html" title="Progress Circle Class. " alt="" coords="307,202,436,289"/>
 </map>

@@ -2,29 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://fogo.io/</loc>
-    <lastmod>2015-10-21T09:37:21-07:00</lastmod>
+    <lastmod>2016-02-16T11:30:23-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   
   <url>
-    <loc>http://fogo.io/404.html</loc>
+    <loc>http://fogo.io/404</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/about.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -35,22 +22,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/annotated.html</loc>
+    <loc>http://fogo.io/about</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/app_8h_source.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -61,9 +35,48 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/archive.html</loc>
+    <loc>http://fogo.io/api/html/annotated</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/app_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/archive</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/asset_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -76,7 +89,7 @@
   <url>
     <loc>http://fogo.io/atom.xml</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -87,9 +100,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/audio_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/audio_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -100,9 +113,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/categories.html</loc>
+    <loc>http://fogo.io/categories</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -113,9 +126,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app-members.html</loc>
+    <loc>http://fogo.io/api/html/class_app-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -126,9 +139,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app.html</loc>
+    <loc>http://fogo.io/api/html/class_app</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -139,9 +152,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app_controller-members.html</loc>
+    <loc>http://fogo.io/api/html/class_app_controller-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -152,9 +165,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app_controller.html</loc>
+    <loc>http://fogo.io/api/html/class_app_controller</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -165,9 +178,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app_state-members.html</loc>
+    <loc>http://fogo.io/api/html/class_app_state-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -178,9 +191,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_app_state.html</loc>
+    <loc>http://fogo.io/api/html/class_app_state</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -191,9 +204,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_button-members.html</loc>
+    <loc>http://fogo.io/api/html/class_button-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -204,9 +217,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_button.html</loc>
+    <loc>http://fogo.io/api/html/class_button</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -217,9 +230,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_button_bar-members.html</loc>
+    <loc>http://fogo.io/api/html/class_button_bar-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -230,9 +243,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_button_bar.html</loc>
+    <loc>http://fogo.io/api/html/class_button_bar</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -243,9 +256,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_charge-members.html</loc>
+    <loc>http://fogo.io/api/html/class_charge-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -256,9 +269,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_charge.html</loc>
+    <loc>http://fogo.io/api/html/class_charge</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -269,9 +282,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_discover-members.html</loc>
+    <loc>http://fogo.io/api/html/class_contact-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -282,9 +295,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_discover.html</loc>
+    <loc>http://fogo.io/api/html/class_contact</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -295,9 +308,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_display-members.html</loc>
+    <loc>http://fogo.io/api/html/class_discover-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -308,9 +321,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_display.html</loc>
+    <loc>http://fogo.io/api/html/class_discover</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -321,9 +334,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit-members.html</loc>
+    <loc>http://fogo.io/api/html/class_display-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -334,9 +347,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit.html</loc>
+    <loc>http://fogo.io/api/html/class_display</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -347,9 +360,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_setting_int-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -360,9 +373,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_setting_int.html</loc>
+    <loc>http://fogo.io/api/html/class_edit</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -373,9 +386,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_setting_int-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -386,9 +399,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_setting_int</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -399,9 +412,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_backlight_time-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -412,9 +425,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_backlight_time</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -425,9 +438,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -438,9 +451,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -451,9 +464,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -464,9 +477,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_high</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -477,9 +490,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_long_press-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -490,9 +503,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_long_press.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_low</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -503,9 +516,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_morse_delay-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -516,9 +529,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_morse_delay.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_brightness_med</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -529,9 +542,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_short_press-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_long_press-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -542,9 +555,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_short_press.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_long_press</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -555,9 +568,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_units-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_morse_delay-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -568,9 +581,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_edit_sys_units.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_morse_delay</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -581,9 +594,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_element-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_short_press-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -594,9 +607,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_element.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_short_press</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -607,9 +620,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_f_sys-members.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_units-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -620,9 +633,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_f_sys.html</loc>
+    <loc>http://fogo.io/api/html/class_edit_sys_units</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -633,9 +646,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_gfx-members.html</loc>
+    <loc>http://fogo.io/api/html/class_element-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -646,9 +659,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_gfx.html</loc>
+    <loc>http://fogo.io/api/html/class_element</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -659,9 +672,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_gfx_attr-members.html</loc>
+    <loc>http://fogo.io/api/html/class_f_sys-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -672,9 +685,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_gfx_attr.html</loc>
+    <loc>http://fogo.io/api/html/class_f_sys</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -685,9 +698,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_axis-members.html</loc>
+    <loc>http://fogo.io/api/html/class_gfx-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -698,9 +711,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_axis.html</loc>
+    <loc>http://fogo.io/api/html/class_gfx</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -711,9 +724,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_data_set-members.html</loc>
+    <loc>http://fogo.io/api/html/class_gfx_attr-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -724,9 +737,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_data_set.html</loc>
+    <loc>http://fogo.io/api/html/class_gfx_attr</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -737,9 +750,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_object-members.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_axis-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -750,9 +763,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_1_1_object.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_axis</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -763,9 +776,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_bar-members.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_data_set-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -776,9 +789,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_bar.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_data_set</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -789,9 +802,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_line-members.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_object-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -802,9 +815,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_graph_line.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_1_1_object</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -815,9 +828,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_kit-members.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_bar-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -828,9 +841,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_kit.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_bar</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -841,9 +854,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_label-members.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_line-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -854,9 +867,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_label.html</loc>
+    <loc>http://fogo.io/api/html/class_graph_line</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -867,9 +880,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_label_metric-members.html</loc>
+    <loc>http://fogo.io/api/html/class_kit-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -880,9 +893,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_label_metric.html</loc>
+    <loc>http://fogo.io/api/html/class_kit</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -893,9 +906,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_light-members.html</loc>
+    <loc>http://fogo.io/api/html/class_label-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -906,9 +919,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_light.html</loc>
+    <loc>http://fogo.io/api/html/class_label</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -919,9 +932,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list-members.html</loc>
+    <loc>http://fogo.io/api/html/class_label_metric-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -932,9 +945,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list.html</loc>
+    <loc>http://fogo.io/api/html/class_label_metric</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -945,9 +958,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item-members.html</loc>
+    <loc>http://fogo.io/api/html/class_light-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -958,9 +971,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item.html</loc>
+    <loc>http://fogo.io/api/html/class_light</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -971,9 +984,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_callback-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -984,9 +997,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_callback.html</loc>
+    <loc>http://fogo.io/api/html/class_list</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -997,9 +1010,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_check-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1010,9 +1023,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_check.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1023,9 +1036,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_element-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_callback-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1036,9 +1049,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_element.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_callback</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1049,9 +1062,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_toggle-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_check-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1062,9 +1075,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_list_item_toggle.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_check</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1075,9 +1088,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_loc-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_element-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1088,9 +1101,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_loc.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_element</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1101,9 +1114,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_location-members.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_toggle-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1114,9 +1127,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_location.html</loc>
+    <loc>http://fogo.io/api/html/class_list_item_toggle</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1127,9 +1140,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_map-members.html</loc>
+    <loc>http://fogo.io/api/html/class_loc-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1140,9 +1153,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_map.html</loc>
+    <loc>http://fogo.io/api/html/class_loc</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1153,9 +1166,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_map_menu-members.html</loc>
+    <loc>http://fogo.io/api/html/class_location-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1166,9 +1179,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_map_menu.html</loc>
+    <loc>http://fogo.io/api/html/class_location</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1179,9 +1192,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_measure-members.html</loc>
+    <loc>http://fogo.io/api/html/class_map-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1192,9 +1205,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_measure.html</loc>
+    <loc>http://fogo.io/api/html/class_map</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1205,9 +1218,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_message_file-members.html</loc>
+    <loc>http://fogo.io/api/html/class_map_menu-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1218,9 +1231,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_message_file.html</loc>
+    <loc>http://fogo.io/api/html/class_map_menu</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1231,9 +1244,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_message_list-members.html</loc>
+    <loc>http://fogo.io/api/html/class_measure-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1244,9 +1257,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_message_list.html</loc>
+    <loc>http://fogo.io/api/html/class_measure</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1257,9 +1270,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_morse_input-members.html</loc>
+    <loc>http://fogo.io/api/html/class_message_file-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1270,9 +1283,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_morse_input.html</loc>
+    <loc>http://fogo.io/api/html/class_message_file</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1283,9 +1296,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_morse_menu-members.html</loc>
+    <loc>http://fogo.io/api/html/class_message_list-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1296,9 +1309,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_morse_menu.html</loc>
+    <loc>http://fogo.io/api/html/class_message_list</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1309,9 +1322,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_motion-members.html</loc>
+    <loc>http://fogo.io/api/html/class_morse_input-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1322,9 +1335,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_motion.html</loc>
+    <loc>http://fogo.io/api/html/class_morse_input</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1335,9 +1348,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_panel-members.html</loc>
+    <loc>http://fogo.io/api/html/class_morse_menu-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1348,9 +1361,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_panel.html</loc>
+    <loc>http://fogo.io/api/html/class_morse_menu</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1361,9 +1374,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_power-members.html</loc>
+    <loc>http://fogo.io/api/html/class_motion-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1374,9 +1387,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_power.html</loc>
+    <loc>http://fogo.io/api/html/class_motion</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1387,9 +1400,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress-members.html</loc>
+    <loc>http://fogo.io/api/html/class_panel-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1400,9 +1413,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress.html</loc>
+    <loc>http://fogo.io/api/html/class_panel</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1413,9 +1426,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_arc-members.html</loc>
+    <loc>http://fogo.io/api/html/class_power-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1426,9 +1439,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_arc.html</loc>
+    <loc>http://fogo.io/api/html/class_power</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1439,9 +1452,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_bar-members.html</loc>
+    <loc>http://fogo.io/api/html/class_progress-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1452,9 +1465,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_bar.html</loc>
+    <loc>http://fogo.io/api/html/class_progress</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1465,9 +1478,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_circle-members.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_arc-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1478,9 +1491,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_circle.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_arc</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1491,9 +1504,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_element-members.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_bar-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1504,9 +1517,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_progress_element.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_bar</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1517,9 +1530,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_rect-members.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_circle-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1530,9 +1543,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_rect.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_circle</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1543,9 +1556,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_screen-members.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_element-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1556,9 +1569,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_screen.html</loc>
+    <loc>http://fogo.io/api/html/class_progress_element</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1569,9 +1582,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_sys-members.html</loc>
+    <loc>http://fogo.io/api/html/class_rect-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1582,9 +1595,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_sys.html</loc>
+    <loc>http://fogo.io/api/html/class_rect</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1595,9 +1608,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_text-members.html</loc>
+    <loc>http://fogo.io/api/html/class_screen-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1608,9 +1621,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/class_text.html</loc>
+    <loc>http://fogo.io/api/html/class_screen</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1621,9 +1634,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/classes.html</loc>
+    <loc>http://fogo.io/api/html/class_sys-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1634,9 +1647,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/contact_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/class_sys</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1647,9 +1660,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/coproc_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/class_text-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1660,9 +1673,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_000000_000002.html</loc>
+    <loc>http://fogo.io/api/html/class_text</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1673,9 +1686,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_000003_000002.html</loc>
+    <loc>http://fogo.io/api/html/classes</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1686,9 +1699,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_6ba165bb2e09366e887108d984d89e5c.html</loc>
+    <loc>http://fogo.io/api/html/contact_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1699,9 +1712,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_bae4909626ecdc7871747f8da3c02062.html</loc>
+    <loc>http://fogo.io/api/html/coproc_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1712,9 +1725,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_d44c64559bbebec7f509842c48db8b23.html</loc>
+    <loc>http://fogo.io/api/html/dir_000000_000002</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1725,9 +1738,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/dir_e4341c5bb6835a0197618859a3d9eb6f.html</loc>
+    <loc>http://fogo.io/api/html/dir_000003_000002</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1738,9 +1751,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/files.html</loc>
+    <loc>http://fogo.io/api/html/dir_6ba165bb2e09366e887108d984d89e5c</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1751,9 +1764,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions.html</loc>
+    <loc>http://fogo.io/api/html/dir_85b491d3b2dccaf1dfd37fbc6e6934f3</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1764,9 +1777,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_b.html</loc>
+    <loc>http://fogo.io/api/html/dir_bae4909626ecdc7871747f8da3c02062</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1777,9 +1790,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_c.html</loc>
+    <loc>http://fogo.io/api/html/dir_d44c64559bbebec7f509842c48db8b23</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1790,9 +1803,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_d.html</loc>
+    <loc>http://fogo.io/api/html/dir_e4341c5bb6835a0197618859a3d9eb6f</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1803,9 +1816,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_e.html</loc>
+    <loc>http://fogo.io/api/html/files</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1816,9 +1829,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_enum.html</loc>
+    <loc>http://fogo.io/api/html/functions</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1829,9 +1842,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_eval.html</loc>
+    <loc>http://fogo.io/api/html/functions_b</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1842,9 +1855,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_f.html</loc>
+    <loc>http://fogo.io/api/html/functions_c</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1855,9 +1868,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func.html</loc>
+    <loc>http://fogo.io/api/html/functions_d</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1868,9 +1881,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_b.html</loc>
+    <loc>http://fogo.io/api/html/functions_e</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1881,9 +1894,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_c.html</loc>
+    <loc>http://fogo.io/api/html/functions_enum</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1894,9 +1907,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_d.html</loc>
+    <loc>http://fogo.io/api/html/functions_eval</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1907,9 +1920,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_e.html</loc>
+    <loc>http://fogo.io/api/html/functions_f</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1920,9 +1933,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_f.html</loc>
+    <loc>http://fogo.io/api/html/functions_func</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1933,9 +1946,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_g.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_b</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1946,9 +1959,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_h.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_c</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1959,9 +1972,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_i.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_d</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1972,9 +1985,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_l.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_e</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1985,9 +1998,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_m.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_f</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1998,9 +2011,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_o.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_g</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2011,9 +2024,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_p.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_h</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2024,9 +2037,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_r.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_i</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2037,9 +2050,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_s.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_l</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2050,9 +2063,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_t.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_m</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2063,9 +2076,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_u.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_o</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2076,9 +2089,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_v.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_p</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2089,9 +2102,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_w.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_r</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2102,9 +2115,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_x.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_s</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2115,9 +2128,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_y.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_t</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2128,9 +2141,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_func_z.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_u</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2141,9 +2154,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_g.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_v</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2154,9 +2167,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_h.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_w</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2167,9 +2180,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_i.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_x</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2180,9 +2193,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_l.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_y</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2193,9 +2206,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_m.html</loc>
+    <loc>http://fogo.io/api/html/functions_func_z</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2206,9 +2219,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_n.html</loc>
+    <loc>http://fogo.io/api/html/functions_g</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2219,9 +2232,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_o.html</loc>
+    <loc>http://fogo.io/api/html/functions_h</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2232,9 +2245,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_p.html</loc>
+    <loc>http://fogo.io/api/html/functions_i</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2245,9 +2258,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_r.html</loc>
+    <loc>http://fogo.io/api/html/functions_l</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2258,9 +2271,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_s.html</loc>
+    <loc>http://fogo.io/api/html/functions_m</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2271,9 +2284,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_t.html</loc>
+    <loc>http://fogo.io/api/html/functions_n</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2284,9 +2297,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_u.html</loc>
+    <loc>http://fogo.io/api/html/functions_o</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2297,9 +2310,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_v.html</loc>
+    <loc>http://fogo.io/api/html/functions_p</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2310,9 +2323,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_vars.html</loc>
+    <loc>http://fogo.io/api/html/functions_q</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2323,9 +2336,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_w.html</loc>
+    <loc>http://fogo.io/api/html/functions_r</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2336,9 +2349,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_x.html</loc>
+    <loc>http://fogo.io/api/html/functions_s</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2349,9 +2362,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_y.html</loc>
+    <loc>http://fogo.io/api/html/functions_t</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2362,9 +2375,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/functions_z.html</loc>
+    <loc>http://fogo.io/api/html/functions_u</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2375,9 +2388,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/globals.html</loc>
+    <loc>http://fogo.io/api/html/functions_v</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2388,9 +2401,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/globals_enum.html</loc>
+    <loc>http://fogo.io/api/html/functions_vars</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2401,9 +2414,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/globals_eval.html</loc>
+    <loc>http://fogo.io/api/html/functions_w</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2414,9 +2427,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/graph_legend.html</loc>
+    <loc>http://fogo.io/api/html/functions_x</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2427,9 +2440,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group___h_i_o.html</loc>
+    <loc>http://fogo.io/api/html/functions_y</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2440,9 +2453,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__button.html</loc>
+    <loc>http://fogo.io/api/html/functions_z</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2453,9 +2466,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__edit.html</loc>
+    <loc>http://fogo.io/api/html/globals</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2466,9 +2479,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__element.html</loc>
+    <loc>http://fogo.io/api/html/globals_enum</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2479,9 +2492,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__graph.html</loc>
+    <loc>http://fogo.io/api/html/globals_eval</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2492,9 +2505,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__input.html</loc>
+    <loc>http://fogo.io/api/html/graph_legend</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2505,9 +2518,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__label.html</loc>
+    <loc>http://fogo.io/api/html/group___h_i_o</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2518,9 +2531,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__light.html</loc>
+    <loc>http://fogo.io/api/html/group__button</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2531,9 +2544,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__list.html</loc>
+    <loc>http://fogo.io/api/html/group__edit</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2544,9 +2557,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__loc.html</loc>
+    <loc>http://fogo.io/api/html/group__element</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2557,9 +2570,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__nav.html</loc>
+    <loc>http://fogo.io/api/html/group__graph</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2570,9 +2583,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/group__sys.html</loc>
+    <loc>http://fogo.io/api/html/group__input</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2583,9 +2596,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/hierarchy.html</loc>
+    <loc>http://fogo.io/api/html/group__label</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2596,9 +2609,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/hio_8h.html</loc>
+    <loc>http://fogo.io/api/html/group__light</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2609,9 +2622,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/hio_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/group__list</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2622,9 +2635,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/hmc5883_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/group__loc</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2635,9 +2648,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/index.html</loc>
+    <loc>http://fogo.io/api/html/group__nav</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2648,9 +2661,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/index.html</loc>
+    <loc>http://fogo.io/api/html/group__sys</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2661,9 +2674,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/inherits.html</loc>
+    <loc>http://fogo.io/api/html/hierarchy</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2674,9 +2687,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/link_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/hio_8h</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2687,9 +2700,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/location_8h.html</loc>
+    <loc>http://fogo.io/api/html/hio_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2700,9 +2713,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/location_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/hmc5883_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2713,9 +2726,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/map_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2726,9 +2739,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/measure_8h_source.html</loc>
+    <loc>http://fogo.io/</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2739,9 +2752,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/message_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/inherits</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2752,9 +2765,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/mma8452_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/light_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2765,9 +2778,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/modules.html</loc>
+    <loc>http://fogo.io/api/html/link_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2778,9 +2791,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/motion_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/location_8h</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2791,9 +2804,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/namespace_graph.html</loc>
+    <loc>http://fogo.io/api/html/location_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2804,9 +2817,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/namespaces.html</loc>
+    <loc>http://fogo.io/api/html/map_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2817,9 +2830,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/notification_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/measure_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2830,9 +2843,113 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/pages.html</loc>
+    <loc>http://fogo.io/api/html/message_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/mma8452_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/modules</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/motion_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/namespace_graph</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/namespaces</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/network_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/notification_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/pages</loc>
+    
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2845,7 +2962,7 @@
   <url>
     <loc>http://fogo.io/rss.xml</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2856,9 +2973,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/sc__phy_8h_source.html</loc>
+    <loc>http://fogo.io/api/html/sc__phy_8h_source</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2871,7 +2988,7 @@
   <url>
     <loc>http://fogo.io/sitemap.txt</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2884,7 +3001,7 @@
   <url>
     <loc>http://fogo.io/sitemap.xml</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2895,22 +3012,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structbutton__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structbutton__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structbutton__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2921,22 +3025,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structfogo__hio__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structbutton__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structfogo__hio__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2947,22 +3038,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__activity__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structfogo__hio__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__activity__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2973,22 +3051,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__coord__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structfogo__hio__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__coord__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2999,22 +3064,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__ecef__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__activity__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__ecef__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3025,22 +3077,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__nav__sat__info__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__activity__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__nav__sat__info__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3051,22 +3090,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__sys__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__coord__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__sys__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3077,22 +3103,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structloc__velocity__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__coord__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structloc__velocity__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3103,22 +3116,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structmap__interest__point__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__ecef__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structmap__interest__point__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3129,22 +3129,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structmap__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__ecef__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structmap__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3155,22 +3142,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structmessage__packet__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__nav__sat__info__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structmessage__packet__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3181,22 +3155,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structmessage__realtime__audio__packet__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__nav__sat__info__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structmessage__realtime__audio__packet__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3207,22 +3168,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/structmessage__text__t-members.html</loc>
+    <loc>http://fogo.io/api/html/structloc__sys__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/structmessage__text__t.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3233,22 +3181,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/sys_8h.html</loc>
+    <loc>http://fogo.io/api/html/structloc__sys__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/sys_8h_source.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3259,22 +3194,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/tutorials.html</loc>
+    <loc>http://fogo.io/api/html/structloc__velocity__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/unionpower__ctrl__t-members.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3285,22 +3207,9 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/unionpower__ctrl__t.html</loc>
+    <loc>http://fogo.io/api/html/structloc__velocity__t</loc>
     
-      <lastmod>2015-10-21</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://fogo.io/api/html/unionpower__status__t-members.html</loc>
-    
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3311,9 +3220,269 @@
   </url>
   
   <url>
-    <loc>http://fogo.io/api/html/unionpower__status__t.html</loc>
+    <loc>http://fogo.io/api/html/structmap__interest__point__t-members</loc>
     
-      <lastmod>2015-10-21</lastmod>
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmap__interest__point__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmap__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmap__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__packet__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__packet__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__realtime__audio__packet__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__realtime__audio__packet__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__text__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structmessage__text__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structnetwork__packet__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structnetwork__packet__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structnetwork__realtime__audio__packet__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/structnetwork__realtime__audio__packet__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/sys_8h</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/sys_8h_source</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/tutorials</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/unionpower__ctrl__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/unionpower__ctrl__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/unionpower__status__t-members</loc>
+    
+      <lastmod>2016-02-16</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://fogo.io/api/html/unionpower__status__t</loc>
+    
+      <lastmod>2016-02-16</lastmod>
     
     
       <changefreq>monthly</changefreq>

@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: ["images/convert", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "images/webdrawings.odg"]
-highlighter: pygments
+highlighter: rouge
 
 port: 4001
 

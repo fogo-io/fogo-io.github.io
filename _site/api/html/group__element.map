@@ -1,8 +1,0 @@
-<map id="UI Elements" name="UI Elements">
-<area shape="rect" id="node1" href="$group__list.html" title="List" alt="" coords="174,5,216,30"/>
-<area shape="rect" id="node2" href="$group__label.html" title="Label" alt="" coords="168,54,222,79"/>
-<area shape="rect" id="node3" href="$group__edit.html" title="Edit Settings" alt="" coords="147,103,243,129"/>
-<area shape="rect" id="node4" href="$group__graph.html" title="Graphs" alt="" coords="162,153,227,178"/>
-<area shape="rect" id="node5" href="$group__nav.html" title="Navigation" alt="" coords="152,202,237,227"/>
-<area shape="rect" id="node6" href="$group__input.html" title="Text Input" alt="" coords="155,251,234,277"/>
-</map>

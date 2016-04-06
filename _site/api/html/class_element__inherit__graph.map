@@ -1,8 +1,0 @@
-<map id="Element" name="Element">
-<area shape="rect" id="node2" href="$class_graph_1_1_object.html" title="Abstract Graph Class. " alt="" coords="47,335,187,475"/>
-<area shape="rect" id="node5" href="$class_map.html" title="Map Class (for mapping coords to display) " alt="" coords="211,302,359,509"/>
-<area shape="rect" id="node6" href="$class_morse_input.html" title="Morse Input Class. " alt="" coords="384,302,541,509"/>
-<area shape="rect" id="node7" href="$class_text.html" title="Text Box. " alt="" coords="566,289,721,522"/>
-<area shape="rect" id="node3" href="$class_graph_bar.html" title="Bar Graph Element. " alt="" coords="5,571,104,645"/>
-<area shape="rect" id="node4" href="$class_graph_line.html" title="Line Graph Element. " alt="" coords="128,571,231,645"/>
-</map>

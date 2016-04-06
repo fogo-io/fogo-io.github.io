@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: pretty
 
 exclude: ["images/convert", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "images/webdrawings.odg"]
 highlighter: rouge
@@ -20,6 +20,11 @@ author :
   github : tyler-gilbert
   twitter : 
   feedburner : 
+
+collections:
+  api:
+    output: true
+    permalink: api/:path:output_ext
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -102,7 +107,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : false 
     google : 
         tracking_id : 'UA-123-12'
     getclicky :

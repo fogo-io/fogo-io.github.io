@@ -10,8 +10,8 @@
   <ReleaseDate>2018-02-07</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="24158399" OS="Any" UncompressedSize="88638179"/>
+  <UpdateFile UncompressedSize="88638179" OS="Any" CompressedSize="24158418"/>
   <DownloadableArchives>FogoHub.7z</DownloadableArchives>
-  <SHA1>15955ea43a6ed16a726b4402654e864a50801dab</SHA1>
+  <SHA1>ff246f78c67f29f35b5bf79335a1d874a296eeda</SHA1>
  </PackageUpdate>
 </Updates>

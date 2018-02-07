@@ -1,0 +1,16 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>co.fogo.fogohub</Name>
+  <DisplayName>FogoHub</DisplayName>
+  <Description>Use the FogoHub to upload activity, adjust settings, and upgrade firmware.</Description>
+  <Version>2.0</Version>
+  <ReleaseDate>2018-02-04</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile OS="Any" UncompressedSize="59146923" CompressedSize="15419990"/>
+  <DownloadableArchives>FogoHub.app.7z</DownloadableArchives>
+  <SHA1>f792419647196469d8f5dea895aaa8ecf634f871</SHA1>
+ </PackageUpdate>
+</Updates>

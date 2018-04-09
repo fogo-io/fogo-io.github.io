@@ -6,12 +6,12 @@
   <Name>co.fogo.fogohub</Name>
   <DisplayName>Fogo Hub</DisplayName>
   <Description>Use the FogoHub to upload activity, adjust settings, and upgrade firmware.</Description>
-  <Version>2.0</Version>
-  <ReleaseDate>2018-02-07</ReleaseDate>
+  <Version>2.1</Version>
+  <ReleaseDate>2018-04-09</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile UncompressedSize="88638179" OS="Any" CompressedSize="24158418"/>
+  <UpdateFile UncompressedSize="88673693" OS="Any" CompressedSize="24167450"/>
   <DownloadableArchives>FogoHub.7z</DownloadableArchives>
-  <SHA1>ff246f78c67f29f35b5bf79335a1d874a296eeda</SHA1>
+  <SHA1>4f596803c066854414046696e635e759c2a13ee7</SHA1>
  </PackageUpdate>
 </Updates>
